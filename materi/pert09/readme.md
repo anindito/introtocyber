@@ -225,86 +225,11 @@ Penyerang baca semua data yang lewat (password, email, dll), lalu teruskan ke tu
 ### 3.3 Diagram ARP Poisoning
 
 **Kondisi Normal:**
-
-```svg
-<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Komputer Anda -->
-  <rect x="50" y="70" width="120" height="80" fill="#4A90E2" stroke="#000" stroke-width="2"/>
-  <text x="110" y="105" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Komputer</text>
-  <text x="110" y="125" text-anchor="middle" fill="white" font-size="12">Anda</text>
-  
-  <!-- Panah Normal -->
-  <line x1="170" y1="110" x2="280" y2="110" stroke="#00AA00" stroke-width="3" marker-end="url(#arrowgreen)"/>
-  <text x="225" y="100" text-anchor="middle" fill="#00AA00" font-size="12">Data Aman</text>
-  
-  <!-- Router -->
-  <rect x="280" y="70" width="120" height="80" fill="#50C878" stroke="#000" stroke-width="2"/>
-  <text x="340" y="105" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Router</text>
-  <text x="340" y="125" text-anchor="middle" fill="white" font-size="12">(Gateway)</text>
-  
-  <!-- Panah ke Internet -->
-  <line x1="400" y1="110" x2="510" y2="110" stroke="#00AA00" stroke-width="3" marker-end="url(#arrowgreen)"/>
-  <text x="455" y="100" text-anchor="middle" fill="#00AA00" font-size="12">Ke Internet</text>
-  
-  <!-- Internet Cloud -->
-  <ellipse cx="540" cy="110" rx="40" ry="30" fill="#87CEEB" stroke="#000" stroke-width="2"/>
-  <text x="540" y="115" text-anchor="middle" fill="white" font-size="12">Internet</text>
-  
-  <!-- Arrow marker -->
-  <defs>
-    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#00AA00"/>
-    </marker>
-  </defs>
-</svg>
-```
+![Gambar 9.1](iamges/sebelum_arp_poisoning.svg)
 
 **Setelah ARP Poisoning:**
 
-```svg
-<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Komputer Anda -->
-  <rect x="50" y="120" width="100" height="70" fill="#4A90E2" stroke="#000" stroke-width="2"/>
-  <text x="100" y="150" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Komputer</text>
-  <text x="100" y="170" text-anchor="middle" fill="white" font-size="11">Anda</text>
-  
-  <!-- Panah ke Penyerang (Merah) -->
-  <line x1="150" y1="155" x2="230" y2="155" stroke="#FF0000" stroke-width="3" marker-end="url(#arrowred)"/>
-  <text x="190" y="145" text-anchor="middle" fill="#FF0000" font-size="11">Data Disadap!</text>
-  
-  <!-- Komputer Penyerang (di tengah) -->
-  <rect x="230" y="120" width="100" height="70" fill="#FF4444" stroke="#000" stroke-width="2"/>
-  <text x="280" y="145" text-anchor="middle" fill="white" font-size="12" font-weight="bold">PENYERANG</text>
-  <text x="280" y="165" text-anchor="middle" fill="white" font-size="10">Membaca Data!</text>
-  
-  <!-- Panah dari Penyerang ke Router -->
-  <line x1="330" y1="155" x2="410" y2="155" stroke="#FF0000" stroke-width="3" marker-end="url(#arrowred)"/>
-  <text x="370" y="145" text-anchor="middle" fill="#FF0000" font-size="11">Diteruskan</text>
-  
-  <!-- Router -->
-  <rect x="410" y="120" width="100" height="70" fill="#50C878" stroke="#000" stroke-width="2"/>
-  <text x="460" y="150" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Router</text>
-  <text x="460" y="170" text-anchor="middle" fill="white" font-size="11">(Gateway)</text>
-  
-  <!-- Panah balik dari Router -->
-  <line x1="230" y1="170" x2="150" y2="170" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowred2)"/>
-  <line x1="410" y1="170" x2="330" y2="170" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowred2)"/>
-  
-  <!-- Keterangan -->
-  <text x="300" y="240" text-anchor="middle" fill="#000" font-size="13" font-weight="bold">⚠️ SEMUA DATA LEWAT PENYERANG!</text>
-  <text x="300" y="260" text-anchor="middle" fill="#666" font-size="11">Penyerang bisa membaca password, email, dll</text>
-  
-  <!-- Arrow markers -->
-  <defs>
-    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#FF0000"/>
-    </marker>
-    <marker id="arrowred2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#FF0000"/>
-    </marker>
-  </defs>
-</svg>
-```
+![Gambar 9.2](iamges/sesudah_arp_poisoning.svg)
 
 ### 3.4 Man-in-the-Middle (MITM) Attack
 
@@ -513,46 +438,7 @@ Jika banyak alamat IP punya MAC yang sama, itu tanda kuat ada ARP Poisoning!
 
 **Cara Kerja VPN:**
 
-```svg
-<svg width="700" height="180" xmlns="http://www.w3.org/2000/svg">
-  <!-- Tanpa VPN (Bahaya) -->
-  <text x="20" y="30" fill="#FF0000" font-size="14" font-weight="bold">❌ TANPA VPN (Berbahaya):</text>
-  
-  <rect x="50" y="40" width="80" height="50" fill="#4A90E2" stroke="#000" stroke-width="2"/>
-  <text x="90" y="70" text-anchor="middle" fill="white" font-size="11">Anda</text>
-  
-  <line x1="130" y1="65" x2="200" y2="65" stroke="#FF0000" stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="165" y="55" text-anchor="middle" fill="#FF0000" font-size="10">Data Terlihat</text>
-  
-  <rect x="200" y="40" width="80" height="50" fill="#FF4444" stroke="#000" stroke-width="2"/>
-  <text x="240" y="65" text-anchor="middle" fill="white" font-size="10">Penyerang</text>
-  <text x="240" y="78" text-anchor="middle" fill="white" font-size="9">Bisa Lihat!</text>
-  
-  <line x1="280" y1="65" x2="350" y2="65" stroke="#00AA00" stroke-width="2"/>
-  
-  <ellipse cx="390" cy="65" rx="35" ry="25" fill="#87CEEB" stroke="#000" stroke-width="2"/>
-  <text x="390" y="70" text-anchor="middle" fill="white" font-size="10">Internet</text>
-  
-  <!-- Dengan VPN (Aman) -->
-  <text x="20" y="130" fill="#00AA00" font-size="14" font-weight="bold">✅ DENGAN VPN (Aman):</text>
-  
-  <rect x="50" y="140" width="80" height="50" fill="#4A90E2" stroke="#000" stroke-width="2"/>
-  <text x="90" y="170" text-anchor="middle" fill="white" font-size="11">Anda</text>
-  
-  <!-- Terowongan VPN -->
-  <rect x="130" y="155" width="150" height="20" fill="#FFD700" stroke="#000" stroke-width="2" rx="10"/>
-  <text x="205" y="169" text-anchor="middle" fill="#000" font-size="10">🔒 Terowongan VPN</text>
-  
-  <rect x="200" y="140" width="80" height="50" fill="#CCCCCC" stroke="#000" stroke-width="2"/>
-  <text x="240" y="165" text-anchor="middle" fill="#333" font-size="10">Penyerang</text>
-  <text x="240" y="178" text-anchor="middle" fill="#333" font-size="9">Tidak Bisa Lihat!</text>
-  
-  <line x1="280" y1="165" x2="350" y2="165" stroke="#00AA00" stroke-width="2"/>
-  
-  <ellipse cx="390" cy="165" rx="35" ry="25" fill="#87CEEB" stroke="#000" stroke-width="2"/>
-  <text x="390" y="170" text-anchor="middle" fill="white" font-size="10">Internet</text>
-</svg>
-```
+![Gambar 9.3](images/cara_kerja_vpn.svg)
 
 **Mengapa VPN Ampuh:**
 
