@@ -1,0 +1,30 @@
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Komputer Anda -->
+  <rect x="50" y="70" width="120" height="80" fill="#4A90E2" stroke="#000" stroke-width="2"/>
+  <text x="110" y="105" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Komputer</text>
+  <text x="110" y="125" text-anchor="middle" fill="white" font-size="12">Anda</text>
+  
+  <!-- Panah Normal -->
+  <line x1="170" y1="110" x2="280" y2="110" stroke="#00AA00" stroke-width="3" marker-end="url(#arrowgreen)"/>
+  <text x="225" y="100" text-anchor="middle" fill="#00AA00" font-size="12">Data Aman</text>
+  
+  <!-- Router -->
+  <rect x="280" y="70" width="120" height="80" fill="#50C878" stroke="#000" stroke-width="2"/>
+  <text x="340" y="105" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Router</text>
+  <text x="340" y="125" text-anchor="middle" fill="white" font-size="12">(Gateway)</text>
+  
+  <!-- Panah ke Internet -->
+  <line x1="400" y1="110" x2="510" y2="110" stroke="#00AA00" stroke-width="3" marker-end="url(#arrowgreen)"/>
+  <text x="455" y="100" text-anchor="middle" fill="#00AA00" font-size="12">Ke Internet</text>
+  
+  <!-- Internet Cloud -->
+  <ellipse cx="540" cy="110" rx="40" ry="30" fill="#87CEEB" stroke="#000" stroke-width="2"/>
+  <text x="540" y="115" text-anchor="middle" fill="white" font-size="12">Internet</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00AA00"/>
+    </marker>
+  </defs>
+</svg>
