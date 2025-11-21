@@ -230,7 +230,7 @@ Penyerang baca semua data yang lewat (password, email, dll), lalu teruskan ke tu
 
 **Setelah ARP Poisoning:**
 
-![Gambar 9.2](images/sesudah_arp_poisoning.svg)
+![Gambar 9.2](images/setelah_arp_poisoning.svg)
 
 ### 3.4 Man-in-the-Middle (MITM) Attack
 
