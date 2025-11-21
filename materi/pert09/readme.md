@@ -8,6 +8,7 @@
 - **Durasi**: 3 x 50 menit
 
 ---
+[Slide untuk Pertemuan Ini](https://anindito.github.io/intro/9/)
 
 ## CAPAIAN PEMBELAJARAN
 
@@ -225,11 +226,11 @@ Penyerang baca semua data yang lewat (password, email, dll), lalu teruskan ke tu
 ### 3.3 Diagram ARP Poisoning
 
 **Kondisi Normal:**
-![Gambar 9.1](iamges/sebelum_arp_poisoning.svg)
+![Gambar 9.1](images/sebelum_arp_poisoning.svg)
 
 **Setelah ARP Poisoning:**
 
-![Gambar 9.2](iamges/sesudah_arp_poisoning.svg)
+![Gambar 9.2](images/sesudah_arp_poisoning.svg)
 
 ### 3.4 Man-in-the-Middle (MITM) Attack
 
@@ -466,19 +467,7 @@ Jika banyak alamat IP punya MAC yang sama, itu tanda kuat ada ARP Poisoning!
 
 **HTTPS** adalah versi aman dari HTTP. Lihat ikon gembok di browser Anda.
 
-```svg
-<svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
-  <!-- HTTP - Tidak Aman -->
-  <rect x="20" y="20" width="200" height="30" fill="#FFCCCC" stroke="#FF0000" stroke-width="2"/>
-  <text x="30" y="40" fill="#000" font-size="12">❌ http://website.com</text>
-  <text x="120" y="65" text-anchor="middle" fill="#FF0000" font-size="10">TIDAK AMAN!</text>
-  
-  <!-- HTTPS - Aman -->
-  <rect x="280" y="20" width="200" height="30" fill="#CCFFCC" stroke="#00AA00" stroke-width="2"/>
-  <text x="290" y="40" fill="#000" font-size="12">✅ 🔒 https://website.com</text>
-  <text x="380" y="65" text-anchor="middle" fill="#00AA00" font-size="10">AMAN!</text>
-</svg>
-```
+![Gambar 9.4](images/tentang_https.svg)
 
 **Tips:**
 
