@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  <!-- Title -->
+  <text x="500" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    OWASP Top 10 - 2021
+  </text>
+  <text x="500" y="58" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7f8c8d">
+    10 Risiko Keamanan Aplikasi Web Paling Kritis
+  </text>
+  
+  <!-- Risk #1 -->
+  <g id="risk1">
+    <rect x="50" y="90" width="900" height="70" rx="8" fill="#e74c3c" stroke="#c0392b" stroke-width="3"/>
+    <circle cx="100" cy="125" r="25" fill="#c0392b" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="133" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">1</text>
+    
+    <text x="150" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Broken Access Control
+    </text>
+    <text x="150" y="138" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Pengguna dapat mengakses data atau fungsi yang tidak seharusnya mereka akses
+    </text>
+    <text x="150" y="152" font-family="Arial, sans-serif" font-size="10" fill="#ffcccc">
+      Contoh: Mengubah ID di URL untuk akses data pengguna lain
+    </text>
+  </g>
+  
+  <!-- Risk #2 -->
+  <g id="risk2">
+    <rect x="50" y="170" width="900" height="70" rx="8" fill="#e67e22" stroke="#d35400" stroke-width="3"/>
+    <circle cx="100" cy="205" r="25" fill="#d35400" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="213" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">2</text>
+    
+    <text x="150" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Cryptographic Failures
+    </text>
+    <text x="150" y="218" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Gagal melindungi data sensitif dengan enkripsi yang tepat
+    </text>
+    <text x="150" y="232" font-family="Arial, sans-serif" font-size="10" fill="#ffe6cc">
+      Contoh: Menyimpan password tanpa hashing, tidak menggunakan HTTPS
+    </text>
+  </g>
+  
+  <!-- Risk #3 -->
+  <g id="risk3">
+    <rect x="50" y="250" width="900" height="70" rx="8" fill="#f39c12" stroke="#e67e22" stroke-width="3"/>
+    <circle cx="100" cy="285" r="25" fill="#e67e22" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="293" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">3</text>
+    
+    <text x="150" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Injection
+    </text>
+    <text x="150" y="298" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Input berbahaya dieksekusi sebagai command atau query
+    </text>
+    <text x="150" y="312" font-family="Arial, sans-serif" font-size="10" fill="#fff5cc">
+      Contoh: SQL Injection, Command Injection, LDAP Injection
+    </text>
+  </g>
+  
+  <!-- Risk #4 -->
+  <g id="risk4">
+    <rect x="50" y="330" width="900" height="70" rx="8" fill="#9b59b6" stroke="#8e44ad" stroke-width="3"/>
+    <circle cx="100" cy="365" r="25" fill="#8e44ad" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="373" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">4</text>
+    
+    <text x="150" y="355" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Insecure Design
+    </text>
+    <text x="150" y="378" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Kelemahan dalam desain dan arsitektur aplikasi
+    </text>
+    <text x="150" y="392" font-family="Arial, sans-serif" font-size="10" fill="#e8d5f5">
+      Contoh: Tidak ada threat modeling, security requirements lemah
+    </text>
+  </g>
+  
+  <!-- Risk #5 -->
+  <g id="risk5">
+    <rect x="50" y="410" width="900" height="70" rx="8" fill="#3498db" stroke="#2980b9" stroke-width="3"/>
+    <circle cx="100" cy="445" r="25" fill="#2980b9" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="453" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">5</text>
+    
+    <text x="150" y="435" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Security Misconfiguration
+    </text>
+    <text x="150" y="458" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Konfigurasi yang tidak aman atau default
+    </text>
+    <text x="150" y="472" font-family="Arial, sans-serif" font-size="10" fill="#d6eaf8">
+      Contoh: Default passwords, error messages verbose, fitur tidak perlu aktif
+    </text>
+  </g>
+  
+  <!-- Risk #6 -->
+  <g id="risk6">
+    <rect x="50" y="490" width="900" height="70" rx="8" fill="#1abc9c" stroke="#16a085" stroke-width="3"/>
+    <circle cx="100" cy="525" r="25" fill="#16a085" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="533" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">6</text>
+    
+    <text x="150" y="515" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Vulnerable and Outdated Components
+    </text>
+    <text x="150" y="538" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Menggunakan library atau framework dengan kerentanan known
+    </text>
+    <text x="150" y="552" font-family="Arial, sans-serif" font-size="10" fill="#d5f4e6">
+      Contoh: Library yang tidak di-update, komponen dengan CVE tinggi
+    </text>
+  </g>
+  
+  <!-- Risk #7 -->
+  <g id="risk7">
+    <rect x="50" y="570" width="900" height="70" rx="8" fill="#27ae60" stroke="#229954" stroke-width="3"/>
+    <circle cx="100" cy="605" r="25" fill="#229954" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="613" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">7</text>
+    
+    <text x="150" y="595" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Identification and Authentication Failures
+    </text>
+    <text x="150" y="618" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Kelemahan dalam mekanisme autentikasi dan session management
+    </text>
+    <text x="150" y="632" font-family="Arial, sans-serif" font-size="10" fill="#d5f5e3">
+      Contoh: Weak passwords, session tidak expire, credential stuffing
+    </text>
+  </g>
+  
+  <!-- Risk #8 -->
+  <g id="risk8">
+    <rect x="50" y="650" width="900" height="70" rx="8" fill="#f1c40f" stroke="#f39c12" stroke-width="3"/>
+    <circle cx="100" cy="685" r="25" fill="#f39c12" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="693" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="333333">8</text>
+    
+    <text x="150" y="675" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">
+      Software and Data Integrity Failures
+    </text>
+    <text x="150" y="698" font-family="Arial, sans-serif" font-size="11" fill="#333333">
+      Kode dan infrastruktur tidak melindungi terhadap violation of integrity
+    </text>
+    <text x="150" y="712" font-family="Arial, sans-serif" font-size="10" fill="#7d6608">
+      Contoh: Auto-update tanpa verifikasi, insecure deserialization
+    </text>
+  </g>
+  
+  <!-- Risk #9 -->
+  <g id="risk9">
+    <rect x="50" y="730" width="900" height="70" rx="8" fill="#95a5a6" stroke="#7f8c8d" stroke-width="3"/>
+    <circle cx="100" cy="765" r="25" fill="#7f8c8d" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="773" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">9</text>
+    
+    <text x="150" y="755" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Security Logging and Monitoring Failures
+    </text>
+    <text x="150" y="778" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Logging dan monitoring tidak memadai untuk deteksi serangan
+    </text>
+    <text x="150" y="792" font-family="Arial, sans-serif" font-size="10" fill="#ecf0f1">
+      Contoh: Tidak ada log untuk failed login, tidak ada alerting sistem
+    </text>
+  </g>
+  
+  <!-- Risk #10 -->
+  <g id="risk10">
+    <rect x="50" y="810" width="900" height="70" rx="8" fill="#34495e" stroke="#2c3e50" stroke-width="3"/>
+    <circle cx="100" cy="845" r="25" fill="#2c3e50" stroke="#ffffff" stroke-width="2"/>
+    <text x="100" y="853" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">10</text>
+    
+    <text x="150" y="835" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Server-Side Request Forgery (SSRF)
+    </text>
+    <text x="150" y="858" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Aplikasi mengambil remote resource tanpa validasi URL
+    </text>
+    <text x="150" y="872" font-family="Arial, sans-serif" font-size="10" fill="#bdc3c7">
+      Contoh: Memaksa aplikasi mengirim request ke internal network
+    </text>
+  </g>
+</svg>

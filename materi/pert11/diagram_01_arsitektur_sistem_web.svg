@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Arsitektur Sistem Web
+  </text>
+  
+  <!-- Client Side -->
+  <g id="client">
+    <!-- Browser -->
+    <rect x="50" y="80" width="180" height="120" rx="10" fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+    <text x="140" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Web Browser
+    </text>
+    <text x="140" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+      (Client)
+    </text>
+    <text x="140" y="160" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      • Chrome
+    </text>
+    <text x="140" y="178" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      • Firefox
+    </text>
+    
+    <!-- Client-side Script -->
+    <rect x="50" y="230" width="180" height="80" rx="10" fill="#9b59b6" stroke="#2c3e50" stroke-width="2"/>
+    <text x="140" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+      Client-Side Script
+    </text>
+    <text x="140" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      JavaScript, HTML, CSS
+    </text>
+  </g>
+  
+  <!-- Arrows between client and server -->
+  <g id="communication">
+    <!-- HTTP Request -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#e74c3c" />
+      </marker>
+    </defs>
+    <line x1="250" y1="130" x2="420" y2="130" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="335" y="120" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      HTTP Request
+    </text>
+    
+    <!-- HTTP Response -->
+    <defs>
+      <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#27ae60" />
+      </marker>
+    </defs>
+    <line x1="420" y1="170" x2="250" y2="170" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead2)"/>
+    <text x="335" y="190" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      HTTP Response
+    </text>
+  </g>
+  
+  <!-- Server Side -->
+  <g id="server">
+    <!-- Web Server -->
+    <rect x="440" y="80" width="180" height="120" rx="10" fill="#e67e22" stroke="#2c3e50" stroke-width="2"/>
+    <text x="530" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Web Server
+    </text>
+    <text x="530" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+      (Server)
+    </text>
+    <text x="530" y="160" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      • Apache
+    </text>
+    <text x="530" y="178" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      • Nginx • IIS
+    </text>
+    
+    <!-- Server-side Script -->
+    <rect x="440" y="230" width="180" height="80" rx="10" fill="#16a085" stroke="#2c3e50" stroke-width="2"/>
+    <text x="530" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+      Server-Side Script
+    </text>
+    <text x="530" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      PHP, Python, Node.js
+    </text>
+    
+    <!-- Database -->
+    <rect x="440" y="340" width="180" height="100" rx="10" fill="#c0392b" stroke="#2c3e50" stroke-width="2"/>
+    <text x="530" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      Database
+    </text>
+    <text x="530" y="400" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      • MySQL
+    </text>
+    <text x="530" y="418" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+      • PostgreSQL
+    </text>
+  </g>
+  
+  <!-- Connection arrows on server side -->
+  <defs>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495e" />
+    </marker>
+  </defs>
+  <line x1="530" y1="200" x2="530" y2="230" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead3)"/>
+  <line x1="530" y1="310" x2="530" y2="340" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead3)"/>
+  
+  <!-- Internet Cloud -->
+  <ellipse cx="335" cy="480" rx="100" ry="50" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2"/>
+  <text x="335" y="490" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#7f8c8d">
+    INTERNET
+  </text>
+  
+  <!-- Connection to Internet -->
+  <line x1="140" y1="310" x2="280" y2="450" stroke="#95a5a6" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="530" y1="440" x2="390" y2="470" stroke="#95a5a6" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="50" y="540" width="700" height="50" rx="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="60" y="560" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+      <tspan font-weight="bold">Keterangan:</tspan> Browser mengirim HTTP Request ke Web Server melalui internet.
+    </text>
+    <text x="60" y="578" font-family="Arial, sans-serif" font-size="11" fill="#495057">
+      Server memproses request dengan script dan database, lalu mengirim HTTP Response kembali ke browser.
+    </text>
+  </g>
+</svg>
