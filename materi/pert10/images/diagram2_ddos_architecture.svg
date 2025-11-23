@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <!-- Title -->
+  <text x="600" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Arsitektur Serangan DDoS dengan Botnet
+  </text>
+  
+  <!-- Attacker -->
+  <g id="attacker">
+    <rect x="520" y="70" width="160" height="90" fill="#212529" stroke="#000" stroke-width="3" rx="10"/>
+    <circle cx="600" cy="100" r="15" fill="#ff6b6b" stroke="#fff" stroke-width="2"/>
+    <text x="600" y="140" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+      PENYERANG
+    </text>
+    <text x="600" y="158" font-size="12" text-anchor="middle" fill="#adb5bd">
+      (Attacker)
+    </text>
+  </g>
+  
+  <!-- Arrow down -->
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#495057" />
+    </marker>
+  </defs>
+  <line x1="600" y1="170" x2="600" y2="220" stroke="#495057" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrow1)"/>
+  <text x="620" y="200" font-size="12" fill="#495057" font-weight="bold">
+    Perintah
+  </text>
+  
+  <!-- C&C Servers -->
+  <g id="cnc-servers">
+    <text x="600" y="250" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c5aa0">
+      Command & Control Servers (C&C)
+    </text>
+    
+    <!-- C&C 1 -->
+    <rect x="200" y="270" width="120" height="70" fill="#4c6ef5" stroke="#364fc7" stroke-width="2" rx="8"/>
+    <text x="260" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+      C&C Server 1
+    </text>
+    <text x="260" y="320" font-size="11" text-anchor="middle" fill="#dbe4ff">
+      (Master)
+    </text>
+    
+    <!-- C&C 2 -->
+    <rect x="440" y="270" width="120" height="70" fill="#4c6ef5" stroke="#364fc7" stroke-width="2" rx="8"/>
+    <text x="500" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+      C&C Server 2
+    </text>
+    <text x="500" y="320" font-size="11" text-anchor="middle" fill="#dbe4ff">
+      (Master)
+    </text>
+    
+    <!-- C&C 3 -->
+    <rect x="680" y="270" width="120" height="70" fill="#4c6ef5" stroke="#364fc7" stroke-width="2" rx="8"/>
+    <text x="740" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+      C&C Server 3
+    </text>
+    <text x="740" y="320" font-size="11" text-anchor="middle" fill="#dbe4ff">
+      (Master)
+    </text>
+    
+    <!-- C&C 4 -->
+    <rect x="880" y="270" width="120" height="70" fill="#4c6ef5" stroke="#364fc7" stroke-width="2" rx="8"/>
+    <text x="940" y="300" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+      C&C Server 4
+    </text>
+    <text x="940" y="320" font-size="11" text-anchor="middle" fill="#dbe4ff">
+      (Master)
+    </text>
+  </g>
+  
+  <!-- Arrows from attacker to C&C -->
+  <line x1="560" y1="230" x2="280" y2="270" stroke="#495057" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="600" y1="230" x2="500" y2="270" stroke="#495057" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="630" y1="230" x2="740" y2="270" stroke="#495057" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="640" y1="230" x2="920" y2="270" stroke="#495057" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Botnet label -->
+  <text x="600" y="380" font-size="18" font-weight="bold" text-anchor="middle" fill="#c92a2a">
+    BOTNET (Komputer Zombie Terinfeksi)
+  </text>
+  
+  <!-- Bot groups -->
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#868e96" />
+    </marker>
+    <marker id="arrow-attack" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e03131" />
+    </marker>
+  </defs>
+  
+  <!-- Bot Group 1 -->
+  <g id="bot-group-1">
+    <circle cx="120" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="120" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="180" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="180" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="240" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="240" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="300" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="300" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <!-- Control lines -->
+    <line x1="260" y1="340" x2="150" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="260" y1="340" x2="210" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="260" y1="340" x2="270" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  </g>
+  
+  <!-- Bot Group 2 -->
+  <g id="bot-group-2">
+    <circle cx="400" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="400" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="460" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="460" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="520" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="520" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="580" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="580" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <!-- Control lines -->
+    <line x1="500" y1="340" x2="430" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="500" y1="340" x2="490" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="500" y1="340" x2="550" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  </g>
+  
+  <!-- Bot Group 3 -->
+  <g id="bot-group-3">
+    <circle cx="660" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="660" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="720" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="720" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="780" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="780" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="840" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="840" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <!-- Control lines -->
+    <line x1="740" y1="340" x2="690" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="740" y1="340" x2="750" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="740" y1="340" x2="810" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  </g>
+  
+  <!-- Bot Group 4 -->
+  <g id="bot-group-4">
+    <circle cx="900" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="900" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="960" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="960" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="1020" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="1020" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <circle cx="1080" cy="420" r="18" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+    <text x="1080" y="426" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Bot</text>
+    
+    <!-- Control lines -->
+    <line x1="940" y1="340" x2="930" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="940" y1="340" x2="990" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+    <line x1="940" y1="340" x2="1050" y2="402" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  </g>
+  
+  <!-- More bots indicator -->
+  <text x="120" y="460" font-size="12" text-anchor="middle" fill="#868e96">...</text>
+  <text x="400" y="460" font-size="12" text-anchor="middle" fill="#868e96">...</text>
+  <text x="660" y="460" font-size="12" text-anchor="middle" fill="#868e96">...</text>
+  <text x="900" y="460" font-size="12" text-anchor="middle" fill="#868e96">...</text>
+  
+  <!-- Attack label -->
+  <text x="600" y="500" font-size="18" font-weight="bold" text-anchor="middle" fill="#e03131">
+    SERANGAN TERDISTRIBUSI
+  </text>
+  
+  <!-- Attack arrows from bots to target -->
+  <line x1="180" y1="460" x2="480" y2="550" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-attack)"/>
+  <line x1="300" y1="460" x2="520" y2="550" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-attack)"/>
+  <line x1="460" y1="460" x2="560" y2="550" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-attack)"/>
+  <line x1="580" y1="460" x2="600" y2="550" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-attack)"/>
+  <line x1="720" y1="460" x2="640" y2="550" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-attack)"/>
+  <line x1="840" y1="460" x2="680" y2="550" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-attack)"/>
+  <line x1="960" y1="460" x2="720" y2="550" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-attack)"/>
+  
+  <!-- Target Server -->
+  <g id="target">
+    <rect x="500" y="560" width="200" height="100" fill="#4dabf7" stroke="#1971c2" stroke-width="3" rx="10"/>
+    <text x="600" y="600" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+      SERVER TARGET
+    </text>
+    <text x="600" y="625" font-size="14" text-anchor="middle" fill="#d0ebff">
+      (Korban Serangan)
+    </text>
+    <text x="600" y="645" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffd43b">
+      ⚠ OVERLOADED
+    </text>
+  </g>
+  
+  <!-- Legend -->
+  <text x="600" y="690" font-size="13" text-anchor="middle" fill="#666" font-style="italic">
+    Gambar 2: Arsitektur lengkap serangan DDoS menunjukkan penyerang, C&C servers, botnet, dan target
+  </text>
+</svg>

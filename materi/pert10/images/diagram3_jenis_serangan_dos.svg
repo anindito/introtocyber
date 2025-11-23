@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750">
+  <!-- Title -->
+  <text x="550" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Jenis-Jenis Serangan Denial of Service (DoS)
+  </text>
+  
+  <!-- Volumetric Attacks -->
+  <g id="volumetric">
+    <rect x="50" y="70" width="320" height="550" fill="#e8f5e9" stroke="#2e7d32" stroke-width="3" rx="10"/>
+    
+    <!-- Title -->
+    <text x="210" y="105" font-size="20" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+      VOLUMETRIC ATTACKS
+    </text>
+    <text x="210" y="130" font-size="14" text-anchor="middle" fill="#558b2f">
+      (Serangan Berbasis Volume)
+    </text>
+    
+    <!-- Icon -->
+    <circle cx="210" cy="170" r="25" fill="#66bb6a" stroke="#2e7d32" stroke-width="2"/>
+    <text x="210" y="180" font-size="28" text-anchor="middle" fill="white">💧</text>
+    
+    <!-- Description -->
+    <text x="70" y="220" font-size="13" font-weight="bold" fill="#1b5e20">
+      Tujuan:
+    </text>
+    <text x="70" y="240" font-size="12" fill="#333">
+      Membanjiri jaringan dengan volume
+    </text>
+    <text x="70" y="256" font-size="12" fill="#333">
+      traffic yang sangat besar untuk
+    </text>
+    <text x="70" y="272" font-size="12" fill="#333">
+      menghabiskan bandwidth
+    </text>
+    
+    <!-- Examples -->
+    <text x="70" y="305" font-size="13" font-weight="bold" fill="#1b5e20">
+      Jenis Serangan:
+    </text>
+    
+    <!-- UDP Flood -->
+    <rect x="70" y="320" width="270" height="60" fill="#a5d6a7" stroke="#43a047" stroke-width="2" rx="5"/>
+    <text x="85" y="340" font-size="13" font-weight="bold" fill="#1b5e20">
+      UDP Flood
+    </text>
+    <text x="85" y="356" font-size="11" fill="#2e7d32">
+      • Membanjiri port dengan paket UDP
+    </text>
+    <text x="85" y="370" font-size="11" fill="#2e7d32">
+      • Server harus memeriksa setiap paket
+    </text>
+    
+    <!-- ICMP Flood -->
+    <rect x="70" y="390" width="270" height="60" fill="#a5d6a7" stroke="#43a047" stroke-width="2" rx="5"/>
+    <text x="85" y="410" font-size="13" font-weight="bold" fill="#1b5e20">
+      ICMP Flood (Ping Flood)
+    </text>
+    <text x="85" y="426" font-size="11" fill="#2e7d32">
+      • Membanjiri dengan echo request
+    </text>
+    <text x="85" y="440" font-size="11" fill="#2e7d32">
+      • Server harus respons setiap request
+    </text>
+    
+    <!-- Amplification -->
+    <rect x="70" y="460" width="270" height="75" fill="#a5d6a7" stroke="#43a047" stroke-width="2" rx="5"/>
+    <text x="85" y="480" font-size="13" font-weight="bold" fill="#1b5e20">
+      Amplification Attack
+    </text>
+    <text x="85" y="496" font-size="11" fill="#2e7d32">
+      • DNS/NTP amplification
+    </text>
+    <text x="85" y="510" font-size="11" fill="#2e7d32">
+      • Request kecil → Respons besar
+    </text>
+    <text x="85" y="524" font-size="11" fill="#2e7d32">
+      • IP spoofing ke server publik
+    </text>
+    
+    <!-- Metric -->
+    <text x="70" y="565" font-size="13" font-weight="bold" fill="#1b5e20">
+      Ukuran Serangan:
+    </text>
+    <text x="70" y="585" font-size="12" fill="#2e7d32">
+      Gbps (Gigabit per second)
+    </text>
+    <text x="70" y="605" font-size="11" fill="#558b2f">
+      Serangan besar: 100+ Gbps
+    </text>
+  </g>
+  
+  <!-- Protocol Attacks -->
+  <g id="protocol">
+    <rect x="390" y="70" width="320" height="550" fill="#e3f2fd" stroke="#1565c0" stroke-width="3" rx="10"/>
+    
+    <!-- Title -->
+    <text x="550" y="105" font-size="20" font-weight="bold" text-anchor="middle" fill="#1565c0">
+      PROTOCOL ATTACKS
+    </text>
+    <text x="550" y="130" font-size="14" text-anchor="middle" fill="#1976d2">
+      (Serangan Berbasis Protokol)
+    </text>
+    
+    <!-- Icon -->
+    <circle cx="550" cy="170" r="25" fill="#42a5f5" stroke="#1565c0" stroke-width="2"/>
+    <text x="550" y="180" font-size="28" text-anchor="middle" fill="white">🔗</text>
+    
+    <!-- Description -->
+    <text x="410" y="220" font-size="13" font-weight="bold" fill="#0d47a1">
+      Tujuan:
+    </text>
+    <text x="410" y="240" font-size="12" fill="#333">
+      Mengeksploitasi kelemahan dalam
+    </text>
+    <text x="410" y="256" font-size="12" fill="#333">
+      protokol komunikasi jaringan
+    </text>
+    <text x="410" y="272" font-size="12" fill="#333">
+      untuk menghabiskan resource
+    </text>
+    
+    <!-- Examples -->
+    <text x="410" y="305" font-size="13" font-weight="bold" fill="#0d47a1">
+      Jenis Serangan:
+    </text>
+    
+    <!-- SYN Flood -->
+    <rect x="410" y="320" width="270" height="75" fill="#90caf9" stroke="#1e88e5" stroke-width="2" rx="5"/>
+    <text x="425" y="340" font-size="13" font-weight="bold" fill="#0d47a1">
+      SYN Flood
+    </text>
+    <text x="425" y="356" font-size="11" fill="#1565c0">
+      • Eksploitasi TCP handshake
+    </text>
+    <text x="425" y="370" font-size="11" fill="#1565c0">
+      • Kirim SYN, tidak kirim ACK
+    </text>
+    <text x="425" y="384" font-size="11" fill="#1565c0">
+      • Habiskan connection table
+    </text>
+    
+    <!-- Ping of Death -->
+    <rect x="410" y="405" width="270" height="70" fill="#90caf9" stroke="#1e88e5" stroke-width="2" rx="5"/>
+    <text x="425" y="425" font-size="13" font-weight="bold" fill="#0d47a1">
+      Ping of Death
+    </text>
+    <text x="425" y="441" font-size="11" fill="#1565c0">
+      • Paket ICMP oversized
+    </text>
+    <text x="425" y="455" font-size="11" fill="#1565c0">
+      • Melebihi batas maksimum IP
+    </text>
+    <text x="425" y="469" font-size="11" fill="#1565c0">
+      • Menyebabkan buffer overflow
+    </text>
+    
+    <!-- Smurf Attack -->
+    <rect x="410" y="485" width="270" height="70" fill="#90caf9" stroke="#1e88e5" stroke-width="2" rx="5"/>
+    <text x="425" y="505" font-size="13" font-weight="bold" fill="#0d47a1">
+      Smurf Attack
+    </text>
+    <text x="425" y="521" font-size="11" fill="#1565c0">
+      • ICMP + IP spoofing
+    </text>
+    <text x="425" y="535" font-size="11" fill="#1565c0">
+      • Broadcast ke banyak host
+    </text>
+    <text x="425" y="549" font-size="11" fill="#1565c0">
+      • Semua host reply ke target
+    </text>
+    
+    <!-- Metric -->
+    <text x="410" y="580" font-size="13" font-weight="bold" fill="#0d47a1">
+      Ukuran Serangan:
+    </text>
+    <text x="410" y="600" font-size="12" fill="#1565c0">
+      Pps (Packet per second)
+    </text>
+    <text x="410" y="615" font-size="11" fill="#1976d2">
+      Serangan besar: 10M+ Pps
+    </text>
+  </g>
+  
+  <!-- Application Layer Attacks -->
+  <g id="application">
+    <rect x="730" y="70" width="320" height="550" fill="#fce4ec" stroke="#c2185b" stroke-width="3" rx="10"/>
+    
+    <!-- Title -->
+    <text x="890" y="105" font-size="20" font-weight="bold" text-anchor="middle" fill="#c2185b">
+      APPLICATION ATTACKS
+    </text>
+    <text x="890" y="130" font-size="14" text-anchor="middle" fill="#d81b60">
+      (Serangan Lapisan Aplikasi)
+    </text>
+    
+    <!-- Icon -->
+    <circle cx="890" cy="170" r="25" fill="#ec407a" stroke="#c2185b" stroke-width="2"/>
+    <text x="890" y="180" font-size="28" text-anchor="middle" fill="white">⚙️</text>
+    
+    <!-- Description -->
+    <text x="750" y="220" font-size="13" font-weight="bold" fill="#880e4f">
+      Tujuan:
+    </text>
+    <text x="750" y="240" font-size="12" fill="#333">
+      Menargetkan aplikasi web dengan
+    </text>
+    <text x="750" y="256" font-size="12" fill="#333">
+      request yang tampak legitimate
+    </text>
+    <text x="750" y="272" font-size="12" fill="#333">
+      untuk menghabiskan resource
+    </text>
+    
+    <!-- Examples -->
+    <text x="750" y="305" font-size="13" font-weight="bold" fill="#880e4f">
+      Jenis Serangan:
+    </text>
+    
+    <!-- HTTP Flood -->
+    <rect x="750" y="320" width="270" height="75" fill="#f48fb1" stroke="#d81b60" stroke-width="2" rx="5"/>
+    <text x="765" y="340" font-size="13" font-weight="bold" fill="#880e4f">
+      HTTP Flood
+    </text>
+    <text x="765" y="356" font-size="11" fill="#ad1457">
+      • Banjir HTTP GET/POST request
+    </text>
+    <text x="765" y="370" font-size="11" fill="#ad1457">
+      • Tampak seperti traffic normal
+    </text>
+    <text x="765" y="384" font-size="11" fill="#ad1457">
+      • Sulit dibedakan dari user asli
+    </text>
+    
+    <!-- Slowloris -->
+    <rect x="750" y="405" width="270" height="75" fill="#f48fb1" stroke="#d81b60" stroke-width="2" rx="5"/>
+    <text x="765" y="425" font-size="13" font-weight="bold" fill="#880e4f">
+      Slowloris
+    </text>
+    <text x="765" y="441" font-size="11" fill="#ad1457">
+      • Partial HTTP request
+    </text>
+    <text x="765" y="455" font-size="11" fill="#ad1457">
+      • Koneksi tetap terbuka lama
+    </text>
+    <text x="765" y="469" font-size="11" fill="#ad1457">
+      • Habiskan connection pool
+    </text>
+    
+    <!-- Application Specific -->
+    <rect x="750" y="490" width="270" height="75" fill="#f48fb1" stroke="#d81b60" stroke-width="2" rx="5"/>
+    <text x="765" y="510" font-size="13" font-weight="bold" fill="#880e4f">
+      Application-Specific
+    </text>
+    <text x="765" y="526" font-size="11" fill="#ad1457">
+      • Query kompleks pada database
+    </text>
+    <text x="765" y="540" font-size="11" fill="#ad1457">
+      • Login brute force berulang
+    </text>
+    <text x="765" y="554" font-size="11" fill="#ad1457">
+      • Upload file besar bersamaan
+    </text>
+    
+    <!-- Metric -->
+    <text x="750" y="585" font-size="13" font-weight="bold" fill="#880e4f">
+      Ukuran Serangan:
+    </text>
+    <text x="750" y="605" font-size="12" fill="#c2185b">
+      Rps (Request per second)
+    </text>
+    <text x="750" y="620" font-size="11" fill="#d81b60">
+      Serangan besar: 100K+ Rps
+    </text>
+  </g>
+  
+  <!-- Legend -->
+  <text x="550" y="660" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Perbandingan Karakteristik
+  </text>
+  
+  <rect x="100" y="675" width="280" height="40" fill="#fff" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="115" y="693" font-size="11" font-weight="bold" fill="#2e7d32">Volumetric:</text>
+  <text x="115" y="708" font-size="10" fill="#333">Paling mudah dilakukan, bandwidth besar</text>
+  
+  <rect x="410" y="675" width="280" height="40" fill="#fff" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="425" y="693" font-size="11" font-weight="bold" fill="#1565c0">Protocol:</text>
+  <text x="425" y="708" font-size="10" fill="#333">Eksploitasi kelemahan protokol</text>
+  
+  <rect x="720" y="675" width="280" height="40" fill="#fff" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="735" y="693" font-size="11" font-weight="bold" fill="#c2185b">Application:</text>
+  <text x="735" y="708" font-size="10" fill="#333">Paling sulit dideteksi, target spesifik</text>
+  
+  <!-- Caption -->
+  <text x="550" y="740" font-size="12" text-anchor="middle" fill="#666" font-style="italic">
+    Gambar 3: Klasifikasi jenis-jenis serangan DoS berdasarkan layer yang diserang
+  </text>
+</svg>

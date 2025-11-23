@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <!-- Title -->
+  <text x="600" y="35" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Strategi Mitigasi Berlapis untuk DoS/DDoS dan Session Hijacking
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="60" font-size="16" text-anchor="middle" fill="#495057">
+    (Defense in Depth / Pertahanan Berlapis)
+  </text>
+  
+  <!-- DoS/DDoS Mitigation Section -->
+  <g id="dos-mitigation">
+    <rect x="50" y="90" width="550" height="750" fill="#e7f5ff" stroke="#1971c2" stroke-width="3" rx="10"/>
+    
+    <!-- Title -->
+    <text x="325" y="125" font-size="22" font-weight="bold" text-anchor="middle" fill="#1971c2">
+      Mitigasi DoS/DDoS
+    </text>
+    
+    <!-- Layer 1: Network Level -->
+    <g id="network-layer">
+      <rect x="80" y="150" width="490" height="120" fill="#d0ebff" stroke="#339af0" stroke-width="2" rx="8"/>
+      <circle cx="110" cy="180" r="15" fill="#339af0"/>
+      <text x="110" y="186" font-size="18" font-weight="bold" text-anchor="middle" fill="white">1</text>
+      <text x="140" y="185" font-size="16" font-weight="bold" fill="#1971c2">
+        Level Network / Infrastruktur
+      </text>
+      
+      <text x="95" y="210" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Rate Limiting:</tspan> Batasi request per IP/subnet
+      </text>
+      <text x="95" y="228" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Traffic Filtering:</tspan> ACL, geo-blocking
+      </text>
+      <text x="95" y="246" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Bandwidth Scaling:</tspan> Over-provision bandwidth
+      </text>
+      <text x="95" y="264" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Anycast Routing:</tspan> Distribusi geografis
+      </text>
+    </g>
+    
+    <!-- Layer 2: Transport Level -->
+    <g id="transport-layer">
+      <rect x="80" y="285" width="490" height="110" fill="#a5d8ff" stroke="#339af0" stroke-width="2" rx="8"/>
+      <circle cx="110" cy="315" r="15" fill="#339af0"/>
+      <text x="110" y="321" font-size="18" font-weight="bold" text-anchor="middle" fill="white">2</text>
+      <text x="140" y="320" font-size="16" font-weight="bold" fill="#1971c2">
+        Level Transport / Koneksi
+      </text>
+      
+      <text x="95" y="345" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">SYN Cookies:</tspan> Lindungi dari SYN flood
+      </text>
+      <text x="95" y="363" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Connection Limiting:</tspan> Batasi koneksi baru
+      </text>
+      <text x="95" y="381" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">TCP Timeout Tuning:</tspan> Optimasi timeout
+      </text>
+    </g>
+    
+    <!-- Layer 3: Application Level -->
+    <g id="application-layer">
+      <rect x="80" y="410" width="490" height="125" fill="#74c0fc" stroke="#339af0" stroke-width="2" rx="8"/>
+      <circle cx="110" cy="440" r="15" fill="#339af0"/>
+      <text x="110" y="446" font-size="18" font-weight="bold" text-anchor="middle" fill="white">3</text>
+      <text x="140" y="445" font-size="16" font-weight="bold" fill="#1971c2">
+        Level Aplikasi
+      </text>
+      
+      <text x="95" y="470" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Web Application Firewall (WAF):</tspan> Filter HTTP
+      </text>
+      <text x="95" y="488" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">CAPTCHA:</tspan> Verifikasi manusia vs bot
+      </text>
+      <text x="95" y="506" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Load Balancing:</tspan> Distribusi beban
+      </text>
+      <text x="95" y="524" font-size="13" fill="#1864ab">
+        • <tspan font-weight="bold">Caching:</tspan> CDN untuk konten statis
+      </text>
+    </g>
+    
+    <!-- Layer 4: Detection & Monitoring -->
+    <g id="detection-layer">
+      <rect x="80" y="550" width="490" height="110" fill="#4dabf7" stroke="#339af0" stroke-width="2" rx="8"/>
+      <circle cx="110" cy="580" r="15" fill="#339af0"/>
+      <text x="110" y="586" font-size="18" font-weight="bold" text-anchor="middle" fill="white">4</text>
+      <text x="140" y="585" font-size="16" font-weight="bold" fill="#1971c2">
+        Deteksi & Monitoring
+      </text>
+      
+      <text x="95" y="610" font-size="13" fill="#0c4a6e">
+        • <tspan font-weight="bold">IDS/IPS:</tspan> Deteksi pattern serangan
+      </text>
+      <text x="95" y="628" font-size="13" fill="#0c4a6e">
+        • <tspan font-weight="bold">SIEM:</tspan> Korelasi events
+      </text>
+      <text x="95" y="646" font-size="13" fill="#0c4a6e">
+        • <tspan font-weight="bold">Traffic Analysis:</tspan> Anomaly detection
+      </text>
+    </g>
+    
+    <!-- Layer 5: Professional Services -->
+    <g id="service-layer">
+      <rect x="80" y="675" width="490" height="145" fill="#1c7ed6" stroke="#1864ab" stroke-width="2" rx="8"/>
+      <circle cx="110" cy="705" r="15" fill="#1864ab"/>
+      <text x="110" y="711" font-size="18" font-weight="bold" text-anchor="middle" fill="white">5</text>
+      <text x="140" y="710" font-size="16" font-weight="bold" fill="white">
+        Layanan Profesional
+      </text>
+      
+      <text x="95" y="735" font-size="13" fill="#e7f5ff">
+        • <tspan font-weight="bold">DDoS Protection Services:</tspan>
+      </text>
+      <text x="105" y="753" font-size="12" fill="#e7f5ff">
+        Cloudflare, Akamai, AWS Shield
+      </text>
+      <text x="95" y="773" font-size="13" fill="#e7f5ff">
+        • <tspan font-weight="bold">Scrubbing Centers:</tspan> Traffic cleaning
+      </text>
+      <text x="95" y="791" font-size="13" fill="#e7f5ff">
+        • <tspan font-weight="bold">24/7 SOC:</tspan> Response team
+      </text>
+      <text x="95" y="809" font-size="13" fill="#e7f5ff">
+        • <tspan font-weight="bold">Incident Response:</tspan> Expert handling
+      </text>
+    </g>
+  </g>
+  
+  <!-- Session Hijacking Mitigation Section -->
+  <g id="session-mitigation">
+    <rect x="620" y="90" width="550" height="750" fill="#fff4e6" stroke="#fd7e14" stroke-width="3" rx="10"/>
+    
+    <!-- Title -->
+    <text x="895" y="125" font-size="22" font-weight="bold" text-anchor="middle" fill="#e8590c">
+      Mitigasi Session Hijacking
+    </text>
+    
+    <!-- Layer 1: Transport Security -->
+    <g id="transport-security">
+      <rect x="650" y="150" width="490" height="110" fill="#ffe8cc" stroke="#fd7e14" stroke-width="2" rx="8"/>
+      <circle cx="680" cy="180" r="15" fill="#fd7e14"/>
+      <text x="680" y="186" font-size="18" font-weight="bold" text-anchor="middle" fill="white">1</text>
+      <text x="710" y="185" font-size="16" font-weight="bold" fill="#e8590c">
+        Keamanan Transport
+      </text>
+      
+      <text x="665" y="210" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">HTTPS Everywhere:</tspan> Seluruh website
+      </text>
+      <text x="665" y="228" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">HSTS:</tspan> Force HTTPS di browser
+      </text>
+      <text x="665" y="246" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">Strong TLS/SSL:</tspan> Konfigurasi aman
+      </text>
+    </g>
+    
+    <!-- Layer 2: Secure Session Management -->
+    <g id="session-management">
+      <rect x="650" y="275" width="490" height="160" fill="#ffd8a8" stroke="#fd7e14" stroke-width="2" rx="8"/>
+      <circle cx="680" cy="305" r="15" fill="#fd7e14"/>
+      <text x="680" y="311" font-size="18" font-weight="bold" text-anchor="middle" fill="white">2</text>
+      <text x="710" y="310" font-size="16" font-weight="bold" fill="#e8590c">
+        Session Management yang Aman
+      </text>
+      
+      <text x="665" y="335" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">Strong Session ID:</tspan> 128-bit random
+      </text>
+      <text x="665" y="353" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">Regenerate after Login:</tspan> Session fixation
+      </text>
+      <text x="665" y="371" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">Session Timeout:</tspan> Inactivity timeout
+      </text>
+      <text x="665" y="389" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">Logout Invalidation:</tspan> Hapus session
+      </text>
+      <text x="665" y="407" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">Session Binding:</tspan> IP, User-Agent check
+      </text>
+      <text x="665" y="425" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">One Session per User:</tspan> Deteksi parallel
+      </text>
+    </g>
+    
+    <!-- Layer 3: Secure Cookie Configuration -->
+    <g id="cookie-security">
+      <rect x="650" y="450" width="490" height="110" fill="#ffc078" stroke="#fd7e14" stroke-width="2" rx="8"/>
+      <circle cx="680" cy="480" r="15" fill="#fd7e14"/>
+      <text x="680" y="486" font-size="18" font-weight="bold" text-anchor="middle" fill="white">3</text>
+      <text x="710" y="485" font-size="16" font-weight="bold" fill="#e8590c">
+        Konfigurasi Cookie yang Aman
+      </text>
+      
+      <text x="665" y="510" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">Secure Flag:</tspan> Cookie hanya via HTTPS
+      </text>
+      <text x="665" y="528" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">HttpOnly Flag:</tspan> No JavaScript access
+      </text>
+      <text x="665" y="546" font-size="13" fill="#d9480f">
+        • <tspan font-weight="bold">SameSite:</tspan> CSRF protection
+      </text>
+    </g>
+    
+    <!-- Layer 4: Application Security -->
+    <g id="app-security">
+      <rect x="650" y="575" width="490" height="125" fill="#ff922b" stroke="#fd7e14" stroke-width="2" rx="8"/>
+      <circle cx="680" cy="605" r="15" fill="#fd7e14"/>
+      <text x="680" y="611" font-size="18" font-weight="bold" text-anchor="middle" fill="white">4</text>
+      <text x="710" y="610" font-size="16" font-weight="bold" fill="white">
+        Keamanan Aplikasi
+      </text>
+      
+      <text x="665" y="635" font-size="13" fill="#ffe8cc">
+        • <tspan font-weight="bold">XSS Prevention:</tspan> Input validation & output encoding
+      </text>
+      <text x="665" y="653" font-size="13" fill="#ffe8cc">
+        • <tspan font-weight="bold">CSP Headers:</tspan> Content Security Policy
+      </text>
+      <text x="665" y="671" font-size="13" fill="#ffe8cc">
+        • <tspan font-weight="bold">Multi-Factor Auth:</tspan> 2FA/MFA untuk transaksi
+      </text>
+      <text x="665" y="689" font-size="13" fill="#ffe8cc">
+        • <tspan font-weight="bold">Regular Security Testing:</tspan> Penetration testing
+      </text>
+    </g>
+    
+    <!-- Layer 5: Monitoring & Detection -->
+    <g id="session-monitoring">
+      <rect x="650" y="715" width="490" height="105" fill="#fd7e14" stroke="#e8590c" stroke-width="2" rx="8"/>
+      <circle cx="680" cy="745" r="15" fill="#e8590c"/>
+      <text x="680" y="751" font-size="18" font-weight="bold" text-anchor="middle" fill="white">5</text>
+      <text x="710" y="750" font-size="16" font-weight="bold" fill="white">
+        Monitoring & Deteksi Anomali
+      </text>
+      
+      <text x="665" y="775" font-size="13" fill="#fff4e6">
+        • <tspan font-weight="bold">Anomaly Detection:</tspan> IP/location changes
+      </text>
+      <text x="665" y="793" font-size="13" fill="#fff4e6">
+        • <tspan font-weight="bold">User Notification:</tspan> Alert aktivitas mencurigakan
+      </text>
+      <text x="665" y="811" font-size="13" fill="#fff4e6">
+        • <tspan font-weight="bold">Session Management UI:</tspan> User lihat active sessions
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom note -->
+  <rect x="100" y="855" width="1000" height="35" fill="#f8f9fa" stroke="#868e96" stroke-width="1" rx="5"/>
+  <text x="600" y="878" font-size="13" text-anchor="middle" fill="#495057">
+    <tspan font-weight="bold">Catatan Penting:</tspan> Tidak ada satu layer yang sempurna. Kombinasi berlapis memberikan perlindungan terbaik.
+  </text>
+  
+  <!-- Caption -->
+  <text x="600" y="900" font-size="12" text-anchor="middle" fill="#666" font-style="italic">
+    Gambar 5: Strategi mitigasi berlapis (Defense in Depth) untuk melindungi dari DoS/DDoS dan Session Hijacking
+  </text>
+</svg>
