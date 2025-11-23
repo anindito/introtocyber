@@ -8,6 +8,7 @@
 **Institusi:** Universitas Pertahanan RI  
 **Pertemuan:** 10 (Sepuluh)
 
+[Slide untuk Pertemuan Ini](https://anindito.github.io/intro/10/)
 ## CAPAIAN PEMBELAJARAN
 
 ### CPMK yang Dicapai
