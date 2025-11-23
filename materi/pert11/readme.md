@@ -47,6 +47,9 @@ Komponen keempat adalah database atau basis data. Database menyimpan informasi y
 
 Komponen kelima adalah client-side scripting atau script yang berjalan di browser pengguna. Yang paling umum adalah JavaScript yang memungkinkan halaman web menjadi interaktif dan responsif tanpa perlu memuat ulang seluruh halaman. Teknologi modern seperti React, Vue.js, dan Angular adalah contoh framework JavaScript yang membuat aplikasi web menjadi lebih dinamis dan mirip dengan aplikasi desktop.
 
+![Gambar 11.1: Arsitektur Sistem Web - menunjukkan komponen-komponen utama dan interaksinya](images/diagram_01_arsitektur_sistem_web.svg)
+*Gambar 11.1: Arsitektur Sistem Web menampilkan komponen client-side (browser, JavaScript) dan server-side (web server, script, database) beserta alur komunikasi HTTP.*
+
 ### 11.1.3 Bagaimana Web Server Bekerja
 
 Proses komunikasi antara browser dan web server mengikuti protokol HTTP (Hypertext Transfer Protocol) atau HTTPS (HTTP Secure). Ketika pengguna mengetikkan alamat website atau mengklik sebuah link, browser akan membuat permintaan HTTP yang disebut HTTP Request. Permintaan ini berisi berbagai informasi seperti metode permintaan (GET, POST, PUT, DELETE), alamat halaman yang diminta, dan informasi tambahan lainnya.
@@ -54,6 +57,9 @@ Proses komunikasi antara browser dan web server mengikuti protokol HTTP (Hyperte
 Permintaan HTTP kemudian dikirim melalui internet menuju web server yang alamatnya tertera dalam URL. Server menerima permintaan tersebut dan memprosesnya berdasarkan konfigurasi yang telah ditetapkan. Jika halaman yang diminta adalah file statis seperti gambar atau file HTML biasa, server akan langsung mengirimkan file tersebut. Namun jika halaman memerlukan pemrosesan dinamis, server akan menjalankan script yang sesuai, mengambil data dari database jika diperlukan, dan menghasilkan halaman HTML yang kemudian dikirimkan kembali.
 
 Respons dari server disebut HTTP Response yang berisi kode status (seperti 200 untuk berhasil, 404 untuk halaman tidak ditemukan, atau 500 untuk error server), header yang berisi informasi tambahan, dan body yang berisi konten halaman web. Browser kemudian menerima respons ini dan menampilkannya kepada pengguna dalam bentuk halaman web yang dapat dilihat dan digunakan.
+
+![Gambar 11.2: Alur Komunikasi HTTP Request-Response](images/diagram_02_http_request_response.svg)
+*Gambar 11.2: Alur komunikasi HTTP menampilkan 5 langkah dari pengguna mengetik URL hingga halaman ditampilkan di browser, termasuk proses pembuatan request, pemrosesan di server, dan pengiriman response.*
 
 ### 11.1.4 Mengapa Keamanan Web Server Penting
 
@@ -149,6 +155,9 @@ Security Logging and Monitoring Failures ada di posisi kesembilan. Tanpa logging
 
 Server-Side Request Forgery (SSRF) menempati posisi kesepuluh sebagai kategori baru di tahun 2021. SSRF terjadi ketika aplikasi web mengambil remote resource tanpa memvalidasi URL yang disediakan pengguna. Ini memungkinkan penyerang untuk memaksa aplikasi mengirim crafted request ke tujuan yang tidak terduga, bahkan ketika dilindungi oleh firewall atau VPN. Dengan meningkatnya arsitektur cloud yang kompleks, SSRF menjadi semakin umum dan berbahaya.
 
+![Gambar 11.3: OWASP Top 10 - 2021](images/diagram_05_owasp_top10.svg)
+*Gambar 11.3: OWASP Top 10 versi 2021 menampilkan sepuluh risiko keamanan aplikasi web paling kritis dengan deskripsi dan contoh untuk masing-masing risiko. Warna yang berbeda menunjukkan tingkat prioritas dan kategori risiko.*
+
 ### 11.3.3 Mengapa OWASP Top 10 Penting untuk Developer dan Security Professional
 
 OWASP Top 10 penting karena memberikan awareness dan common language tentang risiko keamanan aplikasi web. Untuk developer, dokumen ini berfungsi sebagai checklist minimum tentang apa yang harus diperhatikan dalam mengembangkan aplikasi yang secure. Dengan memahami Top 10 ini, developer dapat mengadopsi secure coding practices yang mengurangi kemungkinan memperkenalkan kerentanan umum ini dalam code mereka.
@@ -178,6 +187,9 @@ XSS diklasifikasikan menjadi tiga tipe utama berdasarkan cara script berbahaya t
 **Stored XSS (Persistent XSS)** adalah tipe yang paling berbahaya. Dalam stored XSS, script berbahaya disimpan secara permanen di server target, misalnya dalam database, comment field, visitor log, atau message forum. Setiap kali pengguna mengakses halaman yang mengandung script berbahaya tersebut, script akan dieksekusi di browser mereka. Stored XSS tidak memerlukan interaction khusus dari korban selain mengunjungi halaman yang terinfeksi, membuatnya lebih berbahaya karena dapat menginfeksi banyak pengguna secara otomatis. Contohnya adalah pada forum diskusi dimana penyerang memasukkan script berbahaya dalam postingan mereka, dan setiap pengguna yang membaca postingan tersebut akan terinfeksi.
 
 **DOM-based XSS** adalah tipe yang berbeda karena kerentanannya ada di client-side code bukan server-side code. Dalam DOM-based XSS, payload berbahaya tidak pernah dikirim ke server tetapi dieksekusi sebagai hasil dari memodifikasi Document Object Model (DOM) environment di browser victim. Kerentanan terjadi ketika client-side script membaca data dari untrusted source (seperti URL, document.referrer, atau web storage) dan menggunakannya dalam "dangerous sink" seperti eval(), document.write(), atau innerHTML tanpa sanitasi yang tepat. Karena tidak melibatkan server, DOM-based XSS bisa lebih sulit dideteksi oleh Web Application Firewall atau security scanning tools tradisional.
+
+![Gambar 11.4: Tipe-tipe Serangan Cross-Site Scripting (XSS)](images/diagram_03_tipe_xss.svg)
+*Gambar 11.4: Diagram menunjukkan tiga tipe XSS (Reflected, Stored, dan DOM-based) dengan alur serangan masing-masing, tabel perbandingan karakteristik, dan metode pencegahan yang efektif.*
 
 ### 11.4.3 Dampak Serangan XSS
 
@@ -225,6 +237,9 @@ Contoh sederhana adalah aplikasi banking yang memiliki URL untuk transfer dana: 
 
 Untuk POST request yang lebih kompleks, penyerang dapat membuat form HTML yang auto-submit menggunakan JavaScript. Ketika korban membuka halaman berbahaya, form akan otomatis submit ke aplikasi target dengan parameter yang telah ditentukan penyerang. Karena browser mengirim session cookie dengan POST request tersebut, server akan memprosesnya sebagai action legitimate dari pengguna.
 
+![Gambar 11.5: Alur Serangan Cross-Site Request Forgery (CSRF)](images/diagram_04_csrf_attack.svg)
+*Gambar 11.5: Diagram menampilkan alur lengkap serangan CSRF mulai dari pengguna login, penyerang membuat halaman berbahaya, korban mengklik link, hingga transfer berhasil tanpa sepengetahuan korban. Juga menunjukkan metode pencegahan CSRF yang efektif.*
+
 ### 11.5.3 Dampak Serangan CSRF
 
 Dampak serangan CSRF bervariasi tergantung pada fungsi yang dapat dieksploitasi dan privilege pengguna yang menjadi korban. Untuk aplikasi banking atau financial, CSRF dapat mengakibatkan unauthorized fund transfer dari account korban ke account penyerang. Meskipun transaksi mungkin dapat di-trace, fund recovery bisa rumit dan memakan waktu, dan reputasi financial institution bisa terdampak.
@@ -254,6 +269,11 @@ Penting juga untuk menerapkan proper HTTP method usage. GET requests seharusnya 
 ---
 
 ## 11.6 STRATEGI PENGAMANAN WEB SERVER DAN APLIKASI WEB
+
+Mengamankan web server dan aplikasi web memerlukan pendekatan berlapis yang komprehensif. Strategi Defense in Depth mengakui bahwa tidak ada satu mekanisme keamanan yang sempurna, sehingga multiple layers of protection diperlukan untuk memberikan security posture yang kuat.
+
+![Gambar 11.6: Defense in Depth untuk Keamanan Web](images/diagram_06_defense_in_depth.svg)
+*Gambar 11.6: Diagram Defense in Depth menampilkan 6 layer pertahanan berlapis mulai dari secure coding practices (innermost) hingga server hardening (outermost), plus komponen pendukung seperti monitoring, patch management, security testing, dan incident response.*
 
 ### 11.6.1 Secure Configuration Management
 
@@ -518,6 +538,9 @@ Beberapa nasabah yang sedang login ke internet banking dan mengklik link tersebu
 
 15. Web Application Security Consortium (WASC). http://www.webappsec.org/
 
+---
+
+## INFORMASI PRAKTIKUM
 
 **Catatan Keamanan dan Etika:**
 Semua aktivitas praktikum harus dilakukan dalam lingkungan lab yang terisolasi menggunakan virtual machines. Mahasiswa DILARANG KERAS melakukan testing terhadap sistem yang bukan milik mereka atau tanpa izin explicit. Pelanggaran dapat mengakibatkan konsekuensi akademik dan legal.
@@ -525,5 +548,4 @@ Semua aktivitas praktikum harus dilakukan dalam lingkungan lab yang terisolasi m
 ---
 
 
-
-*Dokumen ini adalah materi pembelajaran untuk Mata Kuliah Pengantar Keamanan Siber, Program Studi Informatika, Universitas Pertahanan RI. Materi ini disusun untuk tujuan pendidikan dan harus digunakan sesuai dengan kode etik dan regulasi yang berlaku.*
+*Dokumen ini adalah materi pembelajaran untuk Mata Kuliah Pengantar Keamanan Siber, Program Studi Teknik Informatika, Universitas Pertahanan RI. Materi ini disusun untuk tujuan pendidikan dan harus digunakan sesuai dengan kode etik dan regulasi yang berlaku.*
