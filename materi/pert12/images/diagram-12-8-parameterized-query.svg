@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 700">
+  <defs>
+    <linearGradient id="vulnerableGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c"/>
+      <stop offset="100%" style="stop-color:#c0392b"/>
+    </linearGradient>
+    <linearGradient id="safeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#27ae60"/>
+      <stop offset="100%" style="stop-color:#1e8449"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50"/>
+      <stop offset="100%" style="stop-color:#1a252f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="700" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e3a5f" text-anchor="middle">Diagram 12.8: Query Rentan vs Parameterized Query</text>
+  
+  <!-- Section A: Vulnerable Query -->
+  <rect x="25" y="60" width="440" height="300" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="2"/>
+  <rect x="25" y="60" width="440" height="40" rx="10" fill="url(#vulnerableGrad)"/>
+  <rect x="25" y="90" width="440" height="10" fill="url(#vulnerableGrad)"/>
+  <text x="245" y="87" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">❌ Query Rentan (Concatenation)</text>
+  
+  <!-- Vulnerable Code -->
+  <g transform="translate(45, 115)">
+    <rect x="0" y="0" width="400" height="100" rx="5" fill="url(#codeGrad)"/>
+    <text x="10" y="20" font-family="Arial, sans-serif" font-size="10" fill="#95a5a6">// PHP - RENTAN! Jangan gunakan!</text>
+    <text x="10" y="40" font-family="Courier New, monospace" font-size="9" fill="#3498db">$query</text>
+    <text x="50" y="40" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1"> = </text>
+    <text x="65" y="40" font-family="Courier New, monospace" font-size="9" fill="#f39c12">"SELECT * FROM users WHERE"</text>
+    <text x="10" y="55" font-family="Courier New, monospace" font-size="9" fill="#f39c12">"username='"</text>
+    <text x="95" y="55" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1"> . </text>
+    <text x="105" y="55" font-family="Courier New, monospace" font-size="9" fill="#e74c3c">$_POST['user']</text>
+    <text x="200" y="55" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1"> . </text>
+    <text x="210" y="55" font-family="Courier New, monospace" font-size="9" fill="#f39c12">"'"</text>
+    <text x="10" y="75" font-family="Courier New, monospace" font-size="9" fill="#3498db">$result</text>
+    <text x="55" y="75" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1"> = mysqli_query($conn, </text>
+    <text x="215" y="75" font-family="Courier New, monospace" font-size="9" fill="#3498db">$query</text>
+    <text x="250" y="75" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1">);</text>
+  </g>
+  
+  <!-- Arrow and Explanation -->
+  <path d="M245 225 L245 245" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowRed)"/>
+  
+  <!-- What happens with attack -->
+  <g transform="translate(45, 255)">
+    <rect x="0" y="0" width="400" height="90" rx="5" fill="white" stroke="#e74c3c" stroke-width="2"/>
+    <text x="200" y="18" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold">Jika input: admin' OR '1'='1</text>
+    
+    <rect x="15" y="28" width="370" height="50" rx="3" fill="#1a252f"/>
+    <text x="200" y="48" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1" text-anchor="middle">SELECT * FROM users WHERE</text>
+    <text x="200" y="63" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1" text-anchor="middle">username='<tspan fill="#e74c3c">admin' OR '1'='1</tspan>'</text>
+  </g>
+  
+  <!-- Problem explanation -->
+  <g transform="translate(100, 355)">
+    <rect x="0" y="0" width="280" height="25" rx="5" fill="#e74c3c"/>
+    <text x="140" y="17" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">⚠️ Input menjadi bagian dari kode SQL!</text>
+  </g>
+  
+  <!-- Section B: Parameterized Query -->
+  <rect x="485" y="60" width="440" height="300" rx="10" fill="#e8f8f5" stroke="#27ae60" stroke-width="2"/>
+  <rect x="485" y="60" width="440" height="40" rx="10" fill="url(#safeGrad)"/>
+  <rect x="485" y="90" width="440" height="10" fill="url(#safeGrad)"/>
+  <text x="705" y="87" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">✓ Parameterized Query (Aman)</text>
+  
+  <!-- Safe Code -->
+  <g transform="translate(505, 115)">
+    <rect x="0" y="0" width="400" height="100" rx="5" fill="url(#codeGrad)"/>
+    <text x="10" y="20" font-family="Arial, sans-serif" font-size="10" fill="#95a5a6">// PHP dengan PDO - AMAN!</text>
+    <text x="10" y="40" font-family="Courier New, monospace" font-size="9" fill="#3498db">$stmt</text>
+    <text x="45" y="40" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1"> = $pdo->prepare(</text>
+    <text x="10" y="55" font-family="Courier New, monospace" font-size="9" fill="#f39c12">"SELECT * FROM users WHERE username = </text>
+    <text x="300" y="55" font-family="Courier New, monospace" font-size="9" fill="#27ae60">?</text>
+    <text x="310" y="55" font-family="Courier New, monospace" font-size="9" fill="#f39c12">"</text>
+    <text x="320" y="55" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1">);</text>
+    <text x="10" y="75" font-family="Courier New, monospace" font-size="9" fill="#3498db">$stmt</text>
+    <text x="45" y="75" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1">->execute([</text>
+    <text x="130" y="75" font-family="Courier New, monospace" font-size="9" fill="#3498db">$_POST['user']</text>
+    <text x="220" y="75" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1">]);</text>
+  </g>
+  
+  <!-- Arrow and Explanation -->
+  <path d="M705 225 L705 245" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- What happens with attack -->
+  <g transform="translate(505, 255)">
+    <rect x="0" y="0" width="400" height="90" rx="5" fill="white" stroke="#27ae60" stroke-width="2"/>
+    <text x="200" y="18" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold">Jika input: admin' OR '1'='1</text>
+    
+    <rect x="15" y="28" width="370" height="50" rx="3" fill="#1a252f"/>
+    <text x="200" y="48" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1" text-anchor="middle">SELECT * FROM users WHERE</text>
+    <text x="200" y="63" font-family="Courier New, monospace" font-size="9" fill="#ecf0f1" text-anchor="middle">username = <tspan fill="#27ae60">'admin'' OR ''1''=''1'</tspan></text>
+  </g>
+  
+  <!-- Solution explanation -->
+  <g transform="translate(560, 355)">
+    <rect x="0" y="0" width="280" height="25" rx="5" fill="#27ae60"/>
+    <text x="140" y="17" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">✓ Input diperlakukan sebagai DATA murni!</text>
+  </g>
+  
+  <!-- How Parameterized Works -->
+  <rect x="25" y="390" width="900" height="150" rx="10" fill="white" stroke="#1e3a5f" stroke-width="2"/>
+  <text x="475" y="415" font-family="Arial, sans-serif" font-size="14" fill="#1e3a5f" text-anchor="middle" font-weight="bold">Bagaimana Parameterized Query Bekerja?</text>
+  
+  <!-- Step 1 -->
+  <g transform="translate(50, 435)">
+    <rect x="0" y="0" width="250" height="85" rx="5" fill="#ebf5fb" stroke="#3498db" stroke-width="1"/>
+    <circle cx="20" cy="20" r="15" fill="#3498db"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">1</text>
+    <text x="140" y="20" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Kompilasi Query</text>
+    <text x="125" y="45" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">Database mengompilasi</text>
+    <text x="125" y="58" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">struktur query TERLEBIH DAHULU</text>
+    <text x="125" y="75" font-family="Courier New, monospace" font-size="8" fill="#3498db" text-anchor="middle">SELECT * FROM users WHERE username = ?</text>
+  </g>
+  
+  <!-- Arrow -->
+  <text x="315" y="480" font-family="Arial, sans-serif" font-size="20" fill="#1e3a5f">→</text>
+  
+  <!-- Step 2 -->
+  <g transform="translate(350, 435)">
+    <rect x="0" y="0" width="250" height="85" rx="5" fill="#fef5e7" stroke="#f39c12" stroke-width="1"/>
+    <circle cx="20" cy="20" r="15" fill="#f39c12"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">2</text>
+    <text x="140" y="20" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Binding Parameter</text>
+    <text x="125" y="45" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">Input pengguna DIPISAHKAN</text>
+    <text x="125" y="58" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">dari struktur query</text>
+    <text x="125" y="75" font-family="Arial, sans-serif" font-size="9" fill="#f39c12" text-anchor="middle">Parameter: "admin' OR '1'='1"</text>
+  </g>
+  
+  <!-- Arrow -->
+  <text x="615" y="480" font-family="Arial, sans-serif" font-size="20" fill="#1e3a5f">→</text>
+  
+  <!-- Step 3 -->
+  <g transform="translate(650, 435)">
+    <rect x="0" y="0" width="250" height="85" rx="5" fill="#e8f8f5" stroke="#27ae60" stroke-width="1"/>
+    <circle cx="20" cy="20" r="15" fill="#27ae60"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">3</text>
+    <text x="140" y="20" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">Eksekusi Aman</text>
+    <text x="125" y="45" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">Input diperlakukan sebagai</text>
+    <text x="125" y="58" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">DATA, bukan kode SQL</text>
+    <text x="125" y="75" font-family="Arial, sans-serif" font-size="9" fill="#27ae60" text-anchor="middle">Karakter khusus di-escape otomatis</text>
+  </g>
+  
+  <!-- Key Takeaway -->
+  <rect x="25" y="560" width="900" height="75" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+  <text x="475" y="590" font-family="Arial, sans-serif" font-size="14" fill="#1e8449" text-anchor="middle" font-weight="bold">🔑 Kunci Utama: Pemisahan Kode dan Data</text>
+  <text x="475" y="615" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">Parameterized query memastikan input pengguna TIDAK PERNAH bisa mengubah struktur query SQL</text>
+  
+  <!-- Footer -->
+  <text x="475" y="680" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">Modul 12 - SQL Injection | Pengantar Keamanan Siber</text>
+</svg>
