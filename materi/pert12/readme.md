@@ -5,6 +5,7 @@
 
 ---
 
+[Slide untuk Pertemuan Ini](https://anindito.github.io/intro/12/)
 ## Capaian Pembelajaran
 
 ### CPMK yang Dicapai
