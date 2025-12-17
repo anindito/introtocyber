@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 600">
+  <defs>
+    <linearGradient id="headerGrad6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#742a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c53030;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="legitimateAP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#68d391;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38a169;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="evilAP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc8181;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e53e3e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow6" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e53e3e"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38a169"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="600" fill="#fff5f5"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="950" height="55" fill="url(#headerGrad6)"/>
+  <text x="475" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+    Gambar 13.6: Ilustrasi Serangan Evil Twin
+  </text>
+  
+  <!-- Scene: Coffee Shop Background -->
+  <rect x="30" y="70" width="890" height="480" rx="10" fill="#fafafa" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="475" y="95" font-family="Arial, sans-serif" font-size="14" fill="#4a5568" text-anchor="middle">
+    Skenario: Kafe dengan WiFi Publik
+  </text>
+  
+  <!-- Legitimate Access Point -->
+  <g transform="translate(150, 130)">
+    <!-- Router shape -->
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="url(#legitimateAP)" filter="url(#shadow6)"/>
+    <rect x="10" y="10" width="100" height="30" rx="4" fill="#9ae6b4"/>
+    <circle cx="30" cy="25" r="5" fill="#276749"/>
+    <circle cx="50" cy="25" r="5" fill="#276749"/>
+    <circle cx="70" cy="25" r="5" fill="#276749"/>
+    <circle cx="90" cy="25" r="5" fill="#f6e05e"/>
+    <!-- Antennas -->
+    <line x1="30" y1="0" x2="30" y2="-20" stroke="#2d3748" stroke-width="3"/>
+    <line x1="60" y1="0" x2="60" y2="-25" stroke="#2d3748" stroke-width="3"/>
+    <line x1="90" y1="0" x2="90" y2="-20" stroke="#2d3748" stroke-width="3"/>
+    
+    <!-- Label -->
+    <text x="60" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749" text-anchor="middle">Access Point Asli</text>
+    <text x="60" y="95" font-family="Arial, sans-serif" font-size="11" fill="#2d3748" text-anchor="middle">SSID: "Kafe_WiFi"</text>
+    
+    <!-- Signal waves (weak) -->
+    <circle cx="60" cy="30" r="50" fill="none" stroke="#68d391" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+    <circle cx="60" cy="30" r="80" fill="none" stroke="#68d391" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+  </g>
+  
+  <!-- Evil Twin Access Point -->
+  <g transform="translate(650, 130)">
+    <!-- Router shape with evil appearance -->
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="url(#evilAP)" filter="url(#shadow6)"/>
+    <rect x="10" y="10" width="100" height="30" rx="4" fill="#feb2b2"/>
+    <circle cx="30" cy="25" r="5" fill="#742a2a"/>
+    <circle cx="50" cy="25" r="5" fill="#742a2a"/>
+    <circle cx="70" cy="25" r="5" fill="#742a2a"/>
+    <circle cx="90" cy="25" r="5" fill="#e53e3e"/>
+    <!-- Larger antennas (stronger signal) -->
+    <line x1="25" y1="0" x2="25" y2="-35" stroke="#2d3748" stroke-width="4"/>
+    <line x1="60" y1="0" x2="60" y2="-40" stroke="#2d3748" stroke-width="4"/>
+    <line x1="95" y1="0" x2="95" y2="-35" stroke="#2d3748" stroke-width="4"/>
+    
+    <!-- External antenna -->
+    <rect x="100" y="-45" width="15" height="50" rx="3" fill="#4a5568"/>
+    
+    <!-- Label -->
+    <text x="60" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c53030" text-anchor="middle">Evil Twin (AP Palsu)</text>
+    <text x="60" y="95" font-family="Arial, sans-serif" font-size="11" fill="#742a2a" text-anchor="middle">SSID: "Kafe_WiFi"</text>
+    <text x="60" y="110" font-family="Arial, sans-serif" font-size="10" fill="#c53030" text-anchor="middle">(Sinyal lebih kuat!)</text>
+    
+    <!-- Signal waves (strong) -->
+    <circle cx="60" cy="30" r="70" fill="none" stroke="#fc8181" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+    <circle cx="60" cy="30" r="110" fill="none" stroke="#fc8181" stroke-width="2" stroke-dasharray="5,3" opacity="0.5"/>
+    <circle cx="60" cy="30" r="150" fill="none" stroke="#fc8181" stroke-width="2" stroke-dasharray="5,3" opacity="0.4"/>
+    <circle cx="60" cy="30" r="190" fill="none" stroke="#fc8181" stroke-width="2" stroke-dasharray="5,3" opacity="0.3"/>
+  </g>
+  
+  <!-- Attacker -->
+  <g transform="translate(670, 320)">
+    <!-- Laptop -->
+    <rect x="0" y="0" width="80" height="50" rx="5" fill="#2d3748" filter="url(#shadow6)"/>
+    <rect x="5" y="5" width="70" height="35" rx="3" fill="#1a202c"/>
+    <!-- Skull icon on screen -->
+    <circle cx="40" cy="22" r="10" fill="none" stroke="#e53e3e" stroke-width="2"/>
+    <circle cx="35" cy="19" r="2" fill="#e53e3e"/>
+    <circle cx="45" cy="19" r="2" fill="#e53e3e"/>
+    <path d="M 35 26 Q 40 30 45 26" fill="none" stroke="#e53e3e" stroke-width="2"/>
+    
+    <rect x="-10" y="50" width="100" height="8" rx="3" fill="#4a5568"/>
+    
+    <!-- Attacker figure -->
+    <circle cx="40" cy="-25" r="18" fill="#2d3748"/>
+    <circle cx="34" cy="-28" r="3" fill="#e53e3e"/>
+    <circle cx="46" cy="-28" r="3" fill="#e53e3e"/>
+    <path d="M 32 -20 Q 40 -15 48 -20" fill="none" stroke="#e53e3e" stroke-width="2"/>
+    
+    <text x="40" y="80" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#742a2a" text-anchor="middle">Penyerang</text>
+  </g>
+  
+  <!-- Connection from Evil Twin to Attacker -->
+  <line x1="710" y1="190" x2="710" y2="295" stroke="#e53e3e" stroke-width="3"/>
+  
+  <!-- Victim -->
+  <g transform="translate(380, 350)">
+    <!-- Laptop -->
+    <rect x="0" y="0" width="70" height="45" rx="5" fill="#edf2f7" stroke="#4a5568" stroke-width="2" filter="url(#shadow6)"/>
+    <rect x="5" y="5" width="60" height="30" rx="2" fill="#a0aec0"/>
+    <rect x="-8" y="45" width="86" height="6" rx="2" fill="#718096"/>
+    
+    <!-- WiFi symbol on screen -->
+    <path d="M 25 25 Q 35 15 45 25" fill="none" stroke="#38a169" stroke-width="2"/>
+    <path d="M 28 28 Q 35 22 42 28" fill="none" stroke="#38a169" stroke-width="2"/>
+    <circle cx="35" cy="30" r="2" fill="#38a169"/>
+    
+    <text x="35" y="70" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Korban</text>
+    <text x="35" y="85" font-family="Arial, sans-serif" font-size="9" fill="#718096" text-anchor="middle">(Memilih sinyal</text>
+    <text x="35" y="97" font-family="Arial, sans-serif" font-size="9" fill="#718096" text-anchor="middle">yang lebih kuat)</text>
+  </g>
+  
+  <!-- Connection lines -->
+  <!-- Weak connection to legitimate AP (crossed out) -->
+  <line x1="270" y1="180" x2="380" y2="350" stroke="#68d391" stroke-width="2" stroke-dasharray="8,4" opacity="0.3"/>
+  <text x="300" y="280" font-family="Arial, sans-serif" font-size="10" fill="#718096" transform="rotate(-45, 300, 280)">Sinyal lemah</text>
+  
+  <!-- Strong connection to Evil Twin -->
+  <path d="M 450 370 Q 550 300 650 180" fill="none" stroke="#e53e3e" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="550" y="260" font-family="Arial, sans-serif" font-size="11" fill="#c53030" font-weight="bold" transform="rotate(-35, 550, 260)">Terhubung!</text>
+  
+  <!-- Internet connection from attacker -->
+  <g transform="translate(800, 250)">
+    <ellipse cx="50" cy="30" rx="50" ry="30" fill="#9f7aea" filter="url(#shadow6)"/>
+    <ellipse cx="30" cy="35" rx="25" ry="18" fill="#b794f4"/>
+    <ellipse cx="70" cy="35" rx="25" ry="18" fill="#b794f4"/>
+    <ellipse cx="50" cy="25" rx="30" ry="20" fill="#d6bcfa"/>
+    <text x="50" y="35" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#44337a" text-anchor="middle">Internet</text>
+  </g>
+  
+  <line x1="750" y1="340" x2="800" y2="280" stroke="#805ad5" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Attack Flow Description Box -->
+  <rect x="50" y="460" width="400" height="85" rx="5" fill="white" stroke="#e53e3e" stroke-width="2" filter="url(#shadow6)"/>
+  <text x="70" y="485" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#742a2a">Alur Serangan Evil Twin:</text>
+  <text x="70" y="505" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">1. Penyerang membuat AP palsu dengan SSID sama</text>
+  <text x="70" y="520" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">2. AP palsu memancarkan sinyal lebih kuat</text>
+  <text x="70" y="535" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">3. Korban otomatis terhubung ke AP palsu</text>
+  
+  <!-- Data Stolen Box -->
+  <rect x="500" y="460" width="400" height="85" rx="5" fill="white" stroke="#c53030" stroke-width="2" filter="url(#shadow6)"/>
+  <text x="520" y="485" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#742a2a">⚠ Data yang Dapat Dicuri:</text>
+  <text x="520" y="505" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">• Username dan password (email, medsos, bank)</text>
+  <text x="520" y="520" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">• Data kartu kredit dan transaksi</text>
+  <text x="520" y="535" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">• Cookie session dan informasi sensitif lainnya</text>
+</svg>

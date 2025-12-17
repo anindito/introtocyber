@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 650">
+  <defs>
+    <linearGradient id="headerGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#744210;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#975a16;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wepGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc8181;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f56565;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wpaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbd38d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f6ad55;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wpa2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9ae6b4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#68d391;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wpa3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#63b3ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4299e1;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow5" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="650" fill="#fffaf0"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="950" height="55" fill="url(#headerGrad5)"/>
+  <text x="475" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+    Gambar 13.5: Perbandingan Fitur Keamanan WEP, WPA, WPA2, dan WPA3
+  </text>
+  
+  <!-- Column Headers -->
+  <rect x="30" y="70" width="170" height="40" rx="5" fill="#718096"/>
+  <text x="115" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Fitur</text>
+  
+  <rect x="210" y="70" width="170" height="40" rx="5" fill="url(#wepGrad)" filter="url(#shadow5)"/>
+  <text x="295" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#742a2a" text-anchor="middle">WEP</text>
+  
+  <rect x="390" y="70" width="170" height="40" rx="5" fill="url(#wpaGrad)" filter="url(#shadow5)"/>
+  <text x="475" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#744210" text-anchor="middle">WPA</text>
+  
+  <rect x="570" y="70" width="170" height="40" rx="5" fill="url(#wpa2Grad)" filter="url(#shadow5)"/>
+  <text x="655" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#22543d" text-anchor="middle">WPA2</text>
+  
+  <rect x="750" y="70" width="170" height="40" rx="5" fill="url(#wpa3Grad)" filter="url(#shadow5)"/>
+  <text x="835" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2a4365" text-anchor="middle">WPA3</text>
+  
+  <!-- Row 1: Tahun Rilis -->
+  <rect x="30" y="120" width="170" height="50" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="115" y="150" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Tahun Rilis</text>
+  
+  <rect x="210" y="120" width="170" height="50" fill="#fff5f5" stroke="#feb2b2" stroke-width="1"/>
+  <text x="295" y="150" font-family="Arial, sans-serif" font-size="12" fill="#742a2a" text-anchor="middle">1997</text>
+  
+  <rect x="390" y="120" width="170" height="50" fill="#fffff0" stroke="#faf089" stroke-width="1"/>
+  <text x="475" y="150" font-family="Arial, sans-serif" font-size="12" fill="#744210" text-anchor="middle">2003</text>
+  
+  <rect x="570" y="120" width="170" height="50" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+  <text x="655" y="150" font-family="Arial, sans-serif" font-size="12" fill="#22543d" text-anchor="middle">2004</text>
+  
+  <rect x="750" y="120" width="170" height="50" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="835" y="150" font-family="Arial, sans-serif" font-size="12" fill="#2a4365" text-anchor="middle">2018</text>
+  
+  <!-- Row 2: Algoritma Enkripsi -->
+  <rect x="30" y="170" width="170" height="60" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="115" y="195" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Algoritma</text>
+  <text x="115" y="210" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Enkripsi</text>
+  
+  <rect x="210" y="170" width="170" height="60" fill="#fff5f5" stroke="#feb2b2" stroke-width="1"/>
+  <text x="295" y="200" font-family="Arial, sans-serif" font-size="11" fill="#742a2a" text-anchor="middle">RC4</text>
+  <text x="295" y="215" font-family="Arial, sans-serif" font-size="9" fill="#9b2c2c" text-anchor="middle">(Stream cipher)</text>
+  
+  <rect x="390" y="170" width="170" height="60" fill="#fffff0" stroke="#faf089" stroke-width="1"/>
+  <text x="475" y="200" font-family="Arial, sans-serif" font-size="11" fill="#744210" text-anchor="middle">RC4 + TKIP</text>
+  <text x="475" y="215" font-family="Arial, sans-serif" font-size="9" fill="#975a16" text-anchor="middle">(Per-packet key)</text>
+  
+  <rect x="570" y="170" width="170" height="60" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+  <text x="655" y="200" font-family="Arial, sans-serif" font-size="11" fill="#22543d" text-anchor="middle">AES-CCMP</text>
+  <text x="655" y="215" font-family="Arial, sans-serif" font-size="9" fill="#276749" text-anchor="middle">(128-bit)</text>
+  
+  <rect x="750" y="170" width="170" height="60" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="835" y="200" font-family="Arial, sans-serif" font-size="11" fill="#2a4365" text-anchor="middle">AES-GCMP</text>
+  <text x="835" y="215" font-family="Arial, sans-serif" font-size="9" fill="#2c5282" text-anchor="middle">(128/256-bit)</text>
+  
+  <!-- Row 3: Panjang Kunci -->
+  <rect x="30" y="230" width="170" height="50" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="115" y="260" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Panjang Kunci</text>
+  
+  <rect x="210" y="230" width="170" height="50" fill="#fff5f5" stroke="#feb2b2" stroke-width="1"/>
+  <text x="295" y="260" font-family="Arial, sans-serif" font-size="11" fill="#742a2a" text-anchor="middle">40/104 bit</text>
+  
+  <rect x="390" y="230" width="170" height="50" fill="#fffff0" stroke="#faf089" stroke-width="1"/>
+  <text x="475" y="260" font-family="Arial, sans-serif" font-size="11" fill="#744210" text-anchor="middle">128 bit</text>
+  
+  <rect x="570" y="230" width="170" height="50" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+  <text x="655" y="260" font-family="Arial, sans-serif" font-size="11" fill="#22543d" text-anchor="middle">128 bit</text>
+  
+  <rect x="750" y="230" width="170" height="50" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="835" y="260" font-family="Arial, sans-serif" font-size="11" fill="#2a4365" text-anchor="middle">128/192/256 bit</text>
+  
+  <!-- Row 4: Autentikasi -->
+  <rect x="30" y="280" width="170" height="60" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="115" y="315" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Autentikasi</text>
+  
+  <rect x="210" y="280" width="170" height="60" fill="#fff5f5" stroke="#feb2b2" stroke-width="1"/>
+  <text x="295" y="305" font-family="Arial, sans-serif" font-size="10" fill="#742a2a" text-anchor="middle">Open/Shared</text>
+  <text x="295" y="320" font-family="Arial, sans-serif" font-size="10" fill="#742a2a" text-anchor="middle">Key</text>
+  
+  <rect x="390" y="280" width="170" height="60" fill="#fffff0" stroke="#faf089" stroke-width="1"/>
+  <text x="475" y="305" font-family="Arial, sans-serif" font-size="10" fill="#744210" text-anchor="middle">PSK atau</text>
+  <text x="475" y="320" font-family="Arial, sans-serif" font-size="10" fill="#744210" text-anchor="middle">802.1X/EAP</text>
+  
+  <rect x="570" y="280" width="170" height="60" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+  <text x="655" y="305" font-family="Arial, sans-serif" font-size="10" fill="#22543d" text-anchor="middle">PSK atau</text>
+  <text x="655" y="320" font-family="Arial, sans-serif" font-size="10" fill="#22543d" text-anchor="middle">802.1X/EAP</text>
+  
+  <rect x="750" y="280" width="170" height="60" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="835" y="305" font-family="Arial, sans-serif" font-size="10" fill="#2a4365" text-anchor="middle">SAE atau</text>
+  <text x="835" y="320" font-family="Arial, sans-serif" font-size="10" fill="#2a4365" text-anchor="middle">802.1X/EAP</text>
+  
+  <!-- Row 5: Integritas Data -->
+  <rect x="30" y="340" width="170" height="50" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="115" y="370" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Integritas Data</text>
+  
+  <rect x="210" y="340" width="170" height="50" fill="#fff5f5" stroke="#feb2b2" stroke-width="1"/>
+  <text x="295" y="370" font-family="Arial, sans-serif" font-size="11" fill="#742a2a" text-anchor="middle">CRC-32</text>
+  
+  <rect x="390" y="340" width="170" height="50" fill="#fffff0" stroke="#faf089" stroke-width="1"/>
+  <text x="475" y="370" font-family="Arial, sans-serif" font-size="11" fill="#744210" text-anchor="middle">Michael MIC</text>
+  
+  <rect x="570" y="340" width="170" height="50" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+  <text x="655" y="370" font-family="Arial, sans-serif" font-size="11" fill="#22543d" text-anchor="middle">CBC-MAC</text>
+  
+  <rect x="750" y="340" width="170" height="50" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="835" y="370" font-family="Arial, sans-serif" font-size="11" fill="#2a4365" text-anchor="middle">GMAC</text>
+  
+  <!-- Row 6: Forward Secrecy -->
+  <rect x="30" y="390" width="170" height="50" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="115" y="420" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Forward Secrecy</text>
+  
+  <rect x="210" y="390" width="170" height="50" fill="#fff5f5" stroke="#feb2b2" stroke-width="1"/>
+  <text x="295" y="420" font-family="Arial, sans-serif" font-size="16" fill="#c53030" text-anchor="middle">✗</text>
+  
+  <rect x="390" y="390" width="170" height="50" fill="#fffff0" stroke="#faf089" stroke-width="1"/>
+  <text x="475" y="420" font-family="Arial, sans-serif" font-size="16" fill="#c53030" text-anchor="middle">✗</text>
+  
+  <rect x="570" y="390" width="170" height="50" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+  <text x="655" y="420" font-family="Arial, sans-serif" font-size="16" fill="#c53030" text-anchor="middle">✗</text>
+  
+  <rect x="750" y="390" width="170" height="50" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="835" y="420" font-family="Arial, sans-serif" font-size="16" fill="#38a169" text-anchor="middle">✓</text>
+  
+  <!-- Row 7: Tingkat Keamanan -->
+  <rect x="30" y="440" width="170" height="60" fill="#edf2f7" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="115" y="465" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Tingkat</text>
+  <text x="115" y="480" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2d3748" text-anchor="middle">Keamanan</text>
+  
+  <rect x="210" y="440" width="170" height="60" fill="#fed7d7" stroke="#fc8181" stroke-width="2"/>
+  <text x="295" y="465" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c53030" text-anchor="middle">TIDAK AMAN</text>
+  <text x="295" y="485" font-family="Arial, sans-serif" font-size="9" fill="#9b2c2c" text-anchor="middle">Dapat dipecahkan</text>
+  <text x="295" y="495" font-family="Arial, sans-serif" font-size="9" fill="#9b2c2c" text-anchor="middle">dalam hitungan menit</text>
+  
+  <rect x="390" y="440" width="170" height="60" fill="#feebc8" stroke="#f6ad55" stroke-width="2"/>
+  <text x="475" y="465" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c05621" text-anchor="middle">LEMAH</text>
+  <text x="475" y="485" font-family="Arial, sans-serif" font-size="9" fill="#975a16" text-anchor="middle">Sudah tidak</text>
+  <text x="475" y="495" font-family="Arial, sans-serif" font-size="9" fill="#975a16" text-anchor="middle">direkomendasikan</text>
+  
+  <rect x="570" y="440" width="170" height="60" fill="#c6f6d5" stroke="#68d391" stroke-width="2"/>
+  <text x="655" y="465" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749" text-anchor="middle">AMAN</text>
+  <text x="655" y="485" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">Standar minimum</text>
+  <text x="655" y="495" font-family="Arial, sans-serif" font-size="9" fill="#22543d" text-anchor="middle">yang direkomendasikan</text>
+  
+  <rect x="750" y="440" width="170" height="60" fill="#bee3f8" stroke="#4299e1" stroke-width="2"/>
+  <text x="835" y="465" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2b6cb0" text-anchor="middle">PALING AMAN</text>
+  <text x="835" y="485" font-family="Arial, sans-serif" font-size="9" fill="#2c5282" text-anchor="middle">Standar terbaru</text>
+  <text x="835" y="495" font-family="Arial, sans-serif" font-size="9" fill="#2c5282" text-anchor="middle">dengan fitur lengkap</text>
+  
+  <!-- Security Level Arrow -->
+  <rect x="30" y="520" width="890" height="50" rx="5" fill="white" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="60" y="550" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2d3748">Tingkat Keamanan:</text>
+  
+  <!-- Arrow showing security level progression -->
+  <line x1="200" y1="545" x2="880" y2="545" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <circle cx="250" cy="545" r="12" fill="#f56565"/>
+  <text x="250" y="535" font-family="Arial, sans-serif" font-size="9" fill="#742a2a" text-anchor="middle">Rendah</text>
+  
+  <circle cx="450" cy="545" r="12" fill="#f6ad55"/>
+  
+  <circle cx="650" cy="545" r="12" fill="#68d391"/>
+  
+  <circle cx="850" cy="545" r="12" fill="#4299e1"/>
+  <text x="850" y="535" font-family="Arial, sans-serif" font-size="9" fill="#2b6cb0" text-anchor="middle">Tinggi</text>
+  
+  <!-- Recommendation Box -->
+  <rect x="30" y="580" width="890" height="60" rx="5" fill="#e6fffa" stroke="#38b2ac" stroke-width="2"/>
+  <text x="475" y="605" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#234e52" text-anchor="middle">
+    📌 REKOMENDASI: Gunakan WPA3 jika didukung, minimal WPA2-AES
+  </text>
+  <text x="475" y="625" font-family="Arial, sans-serif" font-size="11" fill="#285e61" text-anchor="middle">
+    Hindari WEP dan WPA-TKIP karena sudah terbukti tidak aman
+  </text>
+</svg>

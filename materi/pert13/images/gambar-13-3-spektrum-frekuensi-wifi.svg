@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 550">
+  <defs>
+    <linearGradient id="headerGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#553c9a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#805ad5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="freq24Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48bb78;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38a169;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="freq5Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3182ce;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="freq6Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ed8936;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dd6b20;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="550" fill="#faf5ff"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="950" height="55" fill="url(#headerGrad3)"/>
+  <text x="475" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+    Gambar 13.3: Spektrum Frekuensi WiFi
+  </text>
+  
+  <!-- 2.4 GHz Section -->
+  <rect x="30" y="75" width="890" height="130" rx="10" fill="white" stroke="#48bb78" stroke-width="2" filter="url(#shadow3)"/>
+  <rect x="30" y="75" width="890" height="35" rx="10" fill="url(#freq24Grad)"/>
+  <rect x="30" y="100" width="890" height="10" fill="url(#freq24Grad)"/>
+  <text x="475" y="98" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+    Pita Frekuensi 2.4 GHz (2.400 - 2.4835 GHz)
+  </text>
+  
+  <!-- 2.4 GHz Channels -->
+  <text x="50" y="135" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">Channel:</text>
+  
+  <!-- Non-overlapping channels highlighted -->
+  <g transform="translate(100, 120)">
+    <!-- Channel 1 - Non-overlapping -->
+    <rect x="0" y="0" width="55" height="35" rx="5" fill="#c6f6d5" stroke="#38a169" stroke-width="2"/>
+    <text x="27" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749" text-anchor="middle">Ch 1</text>
+    
+    <!-- Channel 2 -->
+    <rect x="45" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="72" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">2</text>
+    
+    <!-- Channel 3 -->
+    <rect x="90" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="117" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">3</text>
+    
+    <!-- Channel 4 -->
+    <rect x="135" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="162" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">4</text>
+    
+    <!-- Channel 5 -->
+    <rect x="180" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="207" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">5</text>
+    
+    <!-- Channel 6 - Non-overlapping -->
+    <rect x="225" y="0" width="55" height="35" rx="5" fill="#c6f6d5" stroke="#38a169" stroke-width="2"/>
+    <text x="252" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749" text-anchor="middle">Ch 6</text>
+    
+    <!-- Channel 7 -->
+    <rect x="270" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="297" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">7</text>
+    
+    <!-- Channel 8 -->
+    <rect x="315" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="342" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">8</text>
+    
+    <!-- Channel 9 -->
+    <rect x="360" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="387" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">9</text>
+    
+    <!-- Channel 10 -->
+    <rect x="405" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="432" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">10</text>
+    
+    <!-- Channel 11 - Non-overlapping -->
+    <rect x="450" y="0" width="55" height="35" rx="5" fill="#c6f6d5" stroke="#38a169" stroke-width="2"/>
+    <text x="477" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#276749" text-anchor="middle">Ch 11</text>
+    
+    <!-- Channel 12 -->
+    <rect x="495" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="522" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">12</text>
+    
+    <!-- Channel 13 -->
+    <rect x="540" y="0" width="55" height="35" rx="5" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+    <text x="567" y="23" font-family="Arial, sans-serif" font-size="11" fill="#68d391" text-anchor="middle">13</text>
+  </g>
+  
+  <!-- 2.4 GHz Info -->
+  <text x="750" y="135" font-family="Arial, sans-serif" font-size="10" fill="#276749" font-weight="bold">✓ Jangkauan luas</text>
+  <text x="750" y="150" font-family="Arial, sans-serif" font-size="10" fill="#276749" font-weight="bold">✓ Penetrasi dinding baik</text>
+  <text x="750" y="165" font-family="Arial, sans-serif" font-size="10" fill="#c53030">✗ Hanya 3 ch non-overlap</text>
+  <text x="750" y="180" font-family="Arial, sans-serif" font-size="10" fill="#c53030">✗ Banyak interferensi</text>
+  
+  <!-- Legend for non-overlapping -->
+  <rect x="50" y="175" width="15" height="15" rx="2" fill="#c6f6d5" stroke="#38a169" stroke-width="1"/>
+  <text x="70" y="187" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">= Channel tidak tumpang tindih (1, 6, 11)</text>
+  
+  <!-- 5 GHz Section -->
+  <rect x="30" y="215" width="890" height="130" rx="10" fill="white" stroke="#4299e1" stroke-width="2" filter="url(#shadow3)"/>
+  <rect x="30" y="215" width="890" height="35" rx="10" fill="url(#freq5Grad)"/>
+  <rect x="30" y="240" width="890" height="10" fill="url(#freq5Grad)"/>
+  <text x="475" y="238" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+    Pita Frekuensi 5 GHz (5.150 - 5.850 GHz)
+  </text>
+  
+  <!-- 5 GHz Channels representation -->
+  <text x="50" y="275" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">Channel (contoh):</text>
+  
+  <g transform="translate(135, 260)">
+    <!-- UNII-1 -->
+    <rect x="0" y="0" width="120" height="35" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+    <text x="60" y="15" font-family="Arial, sans-serif" font-size="9" fill="#2b6cb0" text-anchor="middle">UNII-1</text>
+    <text x="60" y="28" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">36, 40, 44, 48</text>
+    
+    <!-- UNII-2 -->
+    <rect x="130" y="0" width="160" height="35" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+    <text x="210" y="15" font-family="Arial, sans-serif" font-size="9" fill="#2b6cb0" text-anchor="middle">UNII-2</text>
+    <text x="210" y="28" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">52, 56, 60, 64</text>
+    
+    <!-- UNII-2 Extended -->
+    <rect x="300" y="0" width="200" height="35" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+    <text x="400" y="15" font-family="Arial, sans-serif" font-size="9" fill="#2b6cb0" text-anchor="middle">UNII-2 Extended</text>
+    <text x="400" y="28" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">100, 104, 108... 140</text>
+    
+    <!-- UNII-3 -->
+    <rect x="510" y="0" width="140" height="35" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+    <text x="580" y="15" font-family="Arial, sans-serif" font-size="9" fill="#2b6cb0" text-anchor="middle">UNII-3</text>
+    <text x="580" y="28" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">149, 153, 157, 161, 165</text>
+  </g>
+  
+  <!-- 5 GHz Info -->
+  <text x="750" y="275" font-family="Arial, sans-serif" font-size="10" fill="#2b6cb0" font-weight="bold">✓ Banyak channel</text>
+  <text x="750" y="290" font-family="Arial, sans-serif" font-size="10" fill="#2b6cb0" font-weight="bold">✓ Kecepatan tinggi</text>
+  <text x="750" y="305" font-family="Arial, sans-serif" font-size="10" fill="#2b6cb0" font-weight="bold">✓ Interferensi rendah</text>
+  <text x="750" y="320" font-family="Arial, sans-serif" font-size="10" fill="#c53030">✗ Jangkauan lebih pendek</text>
+  
+  <!-- 6 GHz Section (WiFi 6E) -->
+  <rect x="30" y="355" width="890" height="130" rx="10" fill="white" stroke="#ed8936" stroke-width="2" filter="url(#shadow3)"/>
+  <rect x="30" y="355" width="890" height="35" rx="10" fill="url(#freq6Grad)"/>
+  <rect x="30" y="380" width="890" height="10" fill="url(#freq6Grad)"/>
+  <text x="475" y="378" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+    Pita Frekuensi 6 GHz - WiFi 6E (5.925 - 7.125 GHz)
+  </text>
+  
+  <!-- 6 GHz representation -->
+  <text x="50" y="420" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">Spektrum baru:</text>
+  
+  <!-- Wide spectrum bar -->
+  <rect x="135" y="405" width="550" height="40" rx="5" fill="#fbd38d" stroke="#dd6b20" stroke-width="1"/>
+  <text x="410" y="430" font-family="Arial, sans-serif" font-size="12" fill="#744210" text-anchor="middle" font-weight="bold">
+    1200 MHz spektrum tambahan - Hingga 59 channel baru!
+  </text>
+  
+  <!-- Channel width options -->
+  <g transform="translate(135, 455)">
+    <rect x="0" y="0" width="80" height="20" rx="3" fill="#feebc8"/>
+    <text x="40" y="14" font-family="Arial, sans-serif" font-size="9" fill="#744210" text-anchor="middle">20 MHz</text>
+    
+    <rect x="90" y="0" width="80" height="20" rx="3" fill="#feebc8"/>
+    <text x="130" y="14" font-family="Arial, sans-serif" font-size="9" fill="#744210" text-anchor="middle">40 MHz</text>
+    
+    <rect x="180" y="0" width="80" height="20" rx="3" fill="#feebc8"/>
+    <text x="220" y="14" font-family="Arial, sans-serif" font-size="9" fill="#744210" text-anchor="middle">80 MHz</text>
+    
+    <rect x="270" y="0" width="80" height="20" rx="3" fill="#fed7aa" stroke="#ed8936" stroke-width="1"/>
+    <text x="310" y="14" font-family="Arial, sans-serif" font-size="9" fill="#c05621" text-anchor="middle" font-weight="bold">160 MHz</text>
+    
+    <text x="370" y="14" font-family="Arial, sans-serif" font-size="10" fill="#744210">← Lebar channel yang didukung</text>
+  </g>
+  
+  <!-- 6 GHz Info -->
+  <text x="750" y="420" font-family="Arial, sans-serif" font-size="10" fill="#c05621" font-weight="bold">✓ Spektrum sangat luas</text>
+  <text x="750" y="435" font-family="Arial, sans-serif" font-size="10" fill="#c05621" font-weight="bold">✓ Channel 160 MHz penuh</text>
+  <text x="750" y="450" font-family="Arial, sans-serif" font-size="10" fill="#c05621" font-weight="bold">✓ Bebas interferensi legacy</text>
+  <text x="750" y="465" font-family="Arial, sans-serif" font-size="10" fill="#c53030">✗ Perlu perangkat WiFi 6E</text>
+  
+  <!-- Comparison Summary -->
+  <rect x="30" y="495" width="890" height="45" rx="5" fill="#e9d8fd" stroke="#805ad5" stroke-width="1"/>
+  <text x="475" y="520" font-family="Arial, sans-serif" font-size="12" fill="#44337a" text-anchor="middle" font-weight="bold">
+    Ringkasan: 2.4 GHz untuk jangkauan | 5 GHz untuk kecepatan | 6 GHz untuk performa maksimal (WiFi 6E/7)
+  </text>
+</svg>

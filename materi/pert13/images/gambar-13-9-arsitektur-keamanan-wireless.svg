@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 700">
+  <defs>
+    <linearGradient id="headerGrad9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22543d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38a169;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#68d391;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#48bb78;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#63b3ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4299e1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f6ad55;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ed8936;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b794f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9f7aea;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow9" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="700" fill="#f0fff4"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="950" height="55" fill="url(#headerGrad9)"/>
+  <text x="475" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+    Gambar 13.9: Arsitektur Keamanan Jaringan Wireless Komprehensif
+  </text>
+  
+  <!-- Main Defense Layers Container -->
+  <rect x="30" y="70" width="600" height="610" rx="15" fill="white" stroke="#38a169" stroke-width="3" filter="url(#shadow9)"/>
+  <text x="330" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#22543d" text-anchor="middle">
+    Model Pertahanan Berlapis (Defense in Depth)
+  </text>
+  
+  <!-- Layer 1: Physical Security -->
+  <g transform="translate(50, 110)">
+    <rect x="0" y="0" width="560" height="100" rx="10" fill="url(#layer1Grad)" opacity="0.2"/>
+    <rect x="0" y="0" width="560" height="30" rx="10" fill="url(#layer1Grad)"/>
+    <rect x="0" y="20" width="560" height="10" fill="url(#layer1Grad)"/>
+    <text x="280" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+      LAPISAN 1: Keamanan Fisik &amp; Infrastruktur
+    </text>
+    
+    <g transform="translate(15, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#3182ce" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Penempatan AP</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Minimalisir sinyal</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">ke area publik</text>
+    </g>
+    
+    <g transform="translate(150, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#3182ce" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Kontrol Daya TX</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Atur kekuatan</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">transmisi sesuai area</text>
+    </g>
+    
+    <g transform="translate(285, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#3182ce" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Akses Fisik AP</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Lindungi dari</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">akses tidak sah</text>
+    </g>
+    
+    <g transform="translate(420, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#3182ce" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Segmentasi VLAN</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Pisahkan jaringan</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">internal &amp; tamu</text>
+    </g>
+  </g>
+  
+  <!-- Layer 2: Encryption & Authentication -->
+  <g transform="translate(50, 220)">
+    <rect x="0" y="0" width="560" height="120" rx="10" fill="url(#layer2Grad)" opacity="0.2"/>
+    <rect x="0" y="0" width="560" height="30" rx="10" fill="url(#layer2Grad)"/>
+    <rect x="0" y="20" width="560" height="10" fill="url(#layer2Grad)"/>
+    <text x="280" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+      LAPISAN 2: Enkripsi &amp; Autentikasi
+    </text>
+    
+    <g transform="translate(15, 40)">
+      <rect x="0" y="0" width="165" height="70" rx="5" fill="white" stroke="#dd6b20" stroke-width="1"/>
+      <text x="82" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c05621" text-anchor="middle">WPA3/WPA2-AES</text>
+      <text x="82" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Enkripsi kuat (AES)</text>
+      <text x="82" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• SAE untuk WPA3</text>
+      <text x="82" y="57" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Forward secrecy</text>
+    </g>
+    
+    <g transform="translate(195, 40)">
+      <rect x="0" y="0" width="165" height="70" rx="5" fill="white" stroke="#dd6b20" stroke-width="1"/>
+      <text x="82" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c05621" text-anchor="middle">Password Kuat</text>
+      <text x="82" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Min. 12 karakter</text>
+      <text x="82" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Kombinasi kompleks</text>
+      <text x="82" y="57" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Rotasi berkala</text>
+    </g>
+    
+    <g transform="translate(375, 40)">
+      <rect x="0" y="0" width="165" height="70" rx="5" fill="white" stroke="#dd6b20" stroke-width="1"/>
+      <text x="82" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c05621" text-anchor="middle">802.1X/RADIUS</text>
+      <text x="82" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Auth individual</text>
+      <text x="82" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Sertifikat digital</text>
+      <text x="82" y="57" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Audit trail</text>
+    </g>
+  </g>
+  
+  <!-- Layer 3: Monitoring & Detection -->
+  <g transform="translate(50, 350)">
+    <rect x="0" y="0" width="560" height="120" rx="10" fill="url(#layer3Grad)" opacity="0.2"/>
+    <rect x="0" y="0" width="560" height="30" rx="10" fill="url(#layer3Grad)"/>
+    <rect x="0" y="20" width="560" height="10" fill="url(#layer3Grad)"/>
+    <text x="280" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+      LAPISAN 3: Monitoring &amp; Deteksi
+    </text>
+    
+    <g transform="translate(15, 40)">
+      <rect x="0" y="0" width="165" height="70" rx="5" fill="white" stroke="#805ad5" stroke-width="1"/>
+      <text x="82" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6b46c1" text-anchor="middle">WIDS/WIPS</text>
+      <text x="82" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Deteksi Rogue AP</text>
+      <text x="82" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Deteksi serangan</text>
+      <text x="82" y="57" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Auto-response</text>
+    </g>
+    
+    <g transform="translate(195, 40)">
+      <rect x="0" y="0" width="165" height="70" rx="5" fill="white" stroke="#805ad5" stroke-width="1"/>
+      <text x="82" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6b46c1" text-anchor="middle">Log Monitoring</text>
+      <text x="82" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Centralized logging</text>
+      <text x="82" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Anomaly detection</text>
+      <text x="82" y="57" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Alert system</text>
+    </g>
+    
+    <g transform="translate(375, 40)">
+      <rect x="0" y="0" width="165" height="70" rx="5" fill="white" stroke="#805ad5" stroke-width="1"/>
+      <text x="82" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#6b46c1" text-anchor="middle">Audit Berkala</text>
+      <text x="82" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Wireless survey</text>
+      <text x="82" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Pen testing</text>
+      <text x="82" y="57" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">• Compliance check</text>
+    </g>
+  </g>
+  
+  <!-- Layer 4: Policy & People -->
+  <g transform="translate(50, 480)">
+    <rect x="0" y="0" width="560" height="100" rx="10" fill="url(#coreGrad)" opacity="0.2"/>
+    <rect x="0" y="0" width="560" height="30" rx="10" fill="url(#coreGrad)"/>
+    <rect x="0" y="20" width="560" height="10" fill="url(#coreGrad)"/>
+    <text x="280" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+      LAPISAN 4: Kebijakan &amp; SDM
+    </text>
+    
+    <g transform="translate(15, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#38a169" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#276749" text-anchor="middle">Security Policy</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Kebijakan</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">penggunaan WiFi</text>
+    </g>
+    
+    <g transform="translate(150, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#38a169" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#276749" text-anchor="middle">User Training</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Pelatihan</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">kesadaran keamanan</text>
+    </g>
+    
+    <g transform="translate(285, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#38a169" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#276749" text-anchor="middle">Incident Response</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Prosedur</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">penanganan insiden</text>
+    </g>
+    
+    <g transform="translate(420, 40)">
+      <rect x="0" y="0" width="125" height="50" rx="5" fill="white" stroke="#38a169" stroke-width="1"/>
+      <text x="62" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#276749" text-anchor="middle">Access Control</text>
+      <text x="62" y="35" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Onboarding/</text>
+      <text x="62" y="45" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Offboarding</text>
+    </g>
+  </g>
+  
+  <!-- Right Panel: Network Architecture -->
+  <rect x="650" y="70" width="270" height="350" rx="10" fill="white" stroke="#2c5282" stroke-width="2" filter="url(#shadow9)"/>
+  <text x="785" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1a365d" text-anchor="middle">Arsitektur Jaringan Aman</text>
+  
+  <!-- Internet -->
+  <g transform="translate(720, 110)">
+    <ellipse cx="65" cy="25" rx="45" ry="22" fill="#9f7aea"/>
+    <text x="65" y="30" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Internet</text>
+  </g>
+  
+  <!-- Firewall -->
+  <g transform="translate(720, 155)">
+    <rect x="0" y="0" width="130" height="35" rx="5" fill="#fc8181" stroke="#c53030" stroke-width="2"/>
+    <text x="65" y="22" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#742a2a" text-anchor="middle">🛡 Firewall</text>
+  </g>
+  
+  <!-- Line from Internet to Firewall -->
+  <line x1="785" y1="135" x2="785" y2="155" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- RADIUS Server -->
+  <g transform="translate(660, 205)">
+    <rect x="0" y="0" width="80" height="50" rx="5" fill="#bee3f8" stroke="#3182ce" stroke-width="1"/>
+    <text x="40" y="22" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2b6cb0" text-anchor="middle">RADIUS</text>
+    <text x="40" y="38" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Server</text>
+  </g>
+  
+  <!-- Wireless Controller -->
+  <g transform="translate(750, 205)">
+    <rect x="0" y="0" width="80" height="50" rx="5" fill="#c6f6d5" stroke="#38a169" stroke-width="1"/>
+    <text x="40" y="22" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#276749" text-anchor="middle">Wireless</text>
+    <text x="40" y="38" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Controller</text>
+  </g>
+  
+  <!-- WIDS/WIPS -->
+  <g transform="translate(840, 205)">
+    <rect x="0" y="0" width="70" height="50" rx="5" fill="#feebc8" stroke="#dd6b20" stroke-width="1"/>
+    <text x="35" y="22" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c05621" text-anchor="middle">WIDS</text>
+    <text x="35" y="38" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">WIPS</text>
+  </g>
+  
+  <!-- Lines from Firewall to servers -->
+  <line x1="785" y1="190" x2="785" y2="205" stroke="#4a5568" stroke-width="2"/>
+  <line x1="700" y1="200" x2="875" y2="200" stroke="#4a5568" stroke-width="1"/>
+  <line x1="700" y1="200" x2="700" y2="205" stroke="#4a5568" stroke-width="1"/>
+  <line x1="875" y1="200" x2="875" y2="205" stroke="#4a5568" stroke-width="1"/>
+  
+  <!-- Core Switch -->
+  <g transform="translate(720, 275)">
+    <rect x="0" y="0" width="130" height="30" rx="5" fill="#e2e8f0" stroke="#718096" stroke-width="1"/>
+    <text x="65" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4a5568" text-anchor="middle">Core Switch</text>
+  </g>
+  
+  <line x1="785" y1="255" x2="785" y2="275" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- VLANs -->
+  <g transform="translate(665, 320)">
+    <rect x="0" y="0" width="90" height="45" rx="5" fill="#c6f6d5" stroke="#38a169" stroke-width="1"/>
+    <text x="45" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#276749" text-anchor="middle">VLAN 10</text>
+    <text x="45" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Internal WiFi</text>
+  </g>
+  
+  <g transform="translate(815, 320)">
+    <rect x="0" y="0" width="90" height="45" rx="5" fill="#feebc8" stroke="#dd6b20" stroke-width="1"/>
+    <text x="45" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c05621" text-anchor="middle">VLAN 20</text>
+    <text x="45" y="33" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Guest WiFi</text>
+  </g>
+  
+  <line x1="750" y1="305" x2="750" y2="320" stroke="#4a5568" stroke-width="1"/>
+  <line x1="820" y1="305" x2="820" y2="320" stroke="#4a5568" stroke-width="1"/>
+  
+  <!-- Access Points -->
+  <g transform="translate(680, 380)">
+    <ellipse cx="30" cy="15" rx="25" ry="12" fill="#68d391"/>
+    <text x="30" y="19" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">AP</text>
+    <text x="30" y="40" font-family="Arial, sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">WPA3-Ent</text>
+  </g>
+  
+  <g transform="translate(830, 380)">
+    <ellipse cx="30" cy="15" rx="25" ry="12" fill="#f6ad55"/>
+    <text x="30" y="19" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">AP</text>
+    <text x="30" y="40" font-family="Arial, sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">WPA3-Pers</text>
+  </g>
+  
+  <line x1="710" y1="365" x2="710" y2="380" stroke="#38a169" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="860" y1="365" x2="860" y2="380" stroke="#dd6b20" stroke-width="1" stroke-dasharray="3,2"/>
+  
+  <!-- Best Practices Summary -->
+  <rect x="650" y="435" width="270" height="245" rx="10" fill="white" stroke="#38a169" stroke-width="2" filter="url(#shadow9)"/>
+  <rect x="650" y="435" width="270" height="35" rx="10" fill="#38a169"/>
+  <rect x="650" y="460" width="270" height="10" fill="#38a169"/>
+  <text x="785" y="458" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">✓ Checklist Keamanan</text>
+  
+  <text x="670" y="495" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Gunakan WPA3 atau WPA2-AES</text>
+  <text x="670" y="515" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Password kuat (min 12 karakter)</text>
+  <text x="670" y="535" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Pisahkan jaringan tamu</text>
+  <text x="670" y="555" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Aktifkan WIDS/WIPS</text>
+  <text x="670" y="575" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Nonaktifkan WPS</text>
+  <text x="670" y="595" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Update firmware berkala</text>
+  <text x="670" y="615" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Audit keamanan rutin</text>
+  <text x="670" y="635" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Training karyawan</text>
+  <text x="670" y="655" font-family="Arial, sans-serif" font-size="10" fill="#2d3748">☑ Dokumentasi kebijakan</text>
+  
+  <!-- Footer note -->
+  <rect x="50" y="595" width="560" height="70" rx="5" fill="#e6fffa" stroke="#38b2ac" stroke-width="1"/>
+  <text x="330" y="618" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#234e52" text-anchor="middle">
+    💡 Prinsip Utama: Defense in Depth
+  </text>
+  <text x="330" y="638" font-family="Arial, sans-serif" font-size="10" fill="#285e61" text-anchor="middle">
+    Tidak ada solusi tunggal yang sempurna. Kombinasi multiple layer kontrol keamanan
+  </text>
+  <text x="330" y="655" font-family="Arial, sans-serif" font-size="10" fill="#285e61" text-anchor="middle">
+    memberikan perlindungan yang lebih komprehensif terhadap berbagai ancaman.
+  </text>
+</svg>

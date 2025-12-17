@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 580">
+  <defs>
+    <linearGradient id="headerGrad8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phase1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e9d8fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d6bcfa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phase2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#bee3f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#90cdf4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phase3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#feebc8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbd38d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phase4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fed7d7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#feb2b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phase5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c6f6d5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9ae6b4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow8" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <marker id="phaseArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="580" fill="#f7fafc"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="950" height="55" fill="url(#headerGrad8)"/>
+  <text x="475" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+    Gambar 13.8: Alur Kerja Pengujian Keamanan Wireless
+  </text>
+  
+  <!-- Phase 1: Planning -->
+  <g transform="translate(30, 75)">
+    <rect x="0" y="0" width="170" height="200" rx="10" fill="url(#phase1)" stroke="#805ad5" stroke-width="2" filter="url(#shadow8)"/>
+    <circle cx="85" cy="30" r="20" fill="#805ad5"/>
+    <text x="85" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">1</text>
+    <text x="85" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#553c9a" text-anchor="middle">PERENCANAAN</text>
+    
+    <line x1="20" y1="80" x2="150" y2="80" stroke="#805ad5" stroke-width="1"/>
+    
+    <text x="85" y="105" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Tentukan ruang lingkup</text>
+    <text x="85" y="122" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Dapatkan izin tertulis</text>
+    <text x="85" y="139" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Tetapkan batasan waktu</text>
+    <text x="85" y="156" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Siapkan dokumentasi</text>
+    <text x="85" y="173" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Koordinasi tim</text>
+    
+    <!-- Icon -->
+    <text x="85" y="195" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📋</text>
+  </g>
+  
+  <!-- Arrow 1 to 2 -->
+  <line x1="205" y1="175" x2="225" y2="175" stroke="#4a5568" stroke-width="3" marker-end="url(#phaseArrow)"/>
+  
+  <!-- Phase 2: Discovery -->
+  <g transform="translate(235, 75)">
+    <rect x="0" y="0" width="170" height="200" rx="10" fill="url(#phase2)" stroke="#3182ce" stroke-width="2" filter="url(#shadow8)"/>
+    <circle cx="85" cy="30" r="20" fill="#3182ce"/>
+    <text x="85" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">2</text>
+    <text x="85" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2b6cb0" text-anchor="middle">DISCOVERY</text>
+    
+    <line x1="20" y1="80" x2="150" y2="80" stroke="#3182ce" stroke-width="1"/>
+    
+    <text x="85" y="105" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Scan jaringan wireless</text>
+    <text x="85" y="122" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Identifikasi semua AP</text>
+    <text x="85" y="139" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Catat SSID &amp; channel</text>
+    <text x="85" y="156" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Identifikasi enkripsi</text>
+    <text x="85" y="173" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Daftar klien terhubung</text>
+    
+    <!-- Icon -->
+    <text x="85" y="195" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🔍</text>
+  </g>
+  
+  <!-- Arrow 2 to 3 -->
+  <line x1="410" y1="175" x2="430" y2="175" stroke="#4a5568" stroke-width="3" marker-end="url(#phaseArrow)"/>
+  
+  <!-- Phase 3: Vulnerability Analysis -->
+  <g transform="translate(440, 75)">
+    <rect x="0" y="0" width="170" height="200" rx="10" fill="url(#phase3)" stroke="#dd6b20" stroke-width="2" filter="url(#shadow8)"/>
+    <circle cx="85" cy="30" r="20" fill="#dd6b20"/>
+    <text x="85" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">3</text>
+    <text x="85" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#c05621" text-anchor="middle">ANALISIS</text>
+    
+    <line x1="20" y1="80" x2="150" y2="80" stroke="#dd6b20" stroke-width="1"/>
+    
+    <text x="85" y="105" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Evaluasi protokol</text>
+    <text x="85" y="122" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Cek konfigurasi AP</text>
+    <text x="85" y="139" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Identifikasi kelemahan</text>
+    <text x="85" y="156" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Deteksi Rogue AP</text>
+    <text x="85" y="173" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Penilaian risiko</text>
+    
+    <!-- Icon -->
+    <text x="85" y="195" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">⚠️</text>
+  </g>
+  
+  <!-- Arrow 3 to 4 -->
+  <line x1="615" y1="175" x2="635" y2="175" stroke="#4a5568" stroke-width="3" marker-end="url(#phaseArrow)"/>
+  
+  <!-- Phase 4: Exploitation -->
+  <g transform="translate(645, 75)">
+    <rect x="0" y="0" width="170" height="200" rx="10" fill="url(#phase4)" stroke="#e53e3e" stroke-width="2" filter="url(#shadow8)"/>
+    <circle cx="85" cy="30" r="20" fill="#e53e3e"/>
+    <text x="85" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">4</text>
+    <text x="85" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#c53030" text-anchor="middle">EKSPLOITASI</text>
+    
+    <line x1="20" y1="80" x2="150" y2="80" stroke="#e53e3e" stroke-width="1"/>
+    
+    <text x="85" y="105" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Capture handshake</text>
+    <text x="85" y="122" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Password cracking</text>
+    <text x="85" y="139" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Test Evil Twin</text>
+    <text x="85" y="156" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• MITM attack test</text>
+    <text x="85" y="173" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Dokumentasi bukti</text>
+    
+    <!-- Icon -->
+    <text x="85" y="195" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">💻</text>
+  </g>
+  
+  <!-- Arrow to Phase 5 (curved down) -->
+  <path d="M 815 220 L 815 300 L 750 300" fill="none" stroke="#4a5568" stroke-width="3" marker-end="url(#phaseArrow)"/>
+  
+  <!-- Phase 5: Reporting -->
+  <g transform="translate(475, 310)">
+    <rect x="0" y="0" width="270" height="170" rx="10" fill="url(#phase5)" stroke="#38a169" stroke-width="2" filter="url(#shadow8)"/>
+    <circle cx="135" cy="30" r="20" fill="#38a169"/>
+    <text x="135" y="37" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">5</text>
+    <text x="135" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#276749" text-anchor="middle">PELAPORAN</text>
+    
+    <line x1="20" y1="80" x2="250" y2="80" stroke="#38a169" stroke-width="1"/>
+    
+    <text x="135" y="105" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Kompilasi semua temuan</text>
+    <text x="135" y="122" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Analisis dampak dan risiko</text>
+    <text x="135" y="139" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Rekomendasi perbaikan</text>
+    <text x="135" y="156" font-family="Arial, sans-serif" font-size="10" fill="#2d3748" text-anchor="middle">• Presentasi ke stakeholder</text>
+    
+    <!-- Icon -->
+    <text x="240" y="45" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📊</text>
+  </g>
+  
+  <!-- Tools Box -->
+  <rect x="30" y="310" width="420" height="170" rx="10" fill="white" stroke="#2c5282" stroke-width="2" filter="url(#shadow8)"/>
+  <text x="240" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1a365d" text-anchor="middle">🛠 Tools Pengujian</text>
+  <line x1="50" y1="345" x2="430" y2="345" stroke="#cbd5e0" stroke-width="1"/>
+  
+  <!-- Tools Grid -->
+  <g transform="translate(45, 355)">
+    <!-- Tool 1 -->
+    <rect x="0" y="0" width="115" height="50" rx="5" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+    <text x="57" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Aircrack-ng</text>
+    <text x="57" y="38" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Capture &amp; Crack</text>
+    
+    <!-- Tool 2 -->
+    <rect x="125" y="0" width="115" height="50" rx="5" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+    <text x="182" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Kismet</text>
+    <text x="182" y="38" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Passive Detection</text>
+    
+    <!-- Tool 3 -->
+    <rect x="250" y="0" width="115" height="50" rx="5" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+    <text x="307" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Wireshark</text>
+    <text x="307" y="38" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Packet Analysis</text>
+    
+    <!-- Tool 4 -->
+    <rect x="0" y="60" width="115" height="50" rx="5" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+    <text x="57" y="80" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Hashcat</text>
+    <text x="57" y="98" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">GPU Cracking</text>
+    
+    <!-- Tool 5 -->
+    <rect x="125" y="60" width="115" height="50" rx="5" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+    <text x="182" y="80" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Wifiphisher</text>
+    <text x="182" y="98" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">Evil Twin Testing</text>
+    
+    <!-- Tool 6 -->
+    <rect x="250" y="60" width="115" height="50" rx="5" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+    <text x="307" y="80" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2b6cb0" text-anchor="middle">Airgeddon</text>
+    <text x="307" y="98" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle">All-in-one Suite</text>
+  </g>
+  
+  <!-- Legal Warning Box -->
+  <rect x="30" y="500" width="890" height="65" rx="10" fill="#fff5f5" stroke="#c53030" stroke-width="2"/>
+  <text x="50" y="525" font-family="Arial, sans-serif" font-size="16" fill="#c53030">⚠️</text>
+  <text x="75" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#742a2a">PERINGATAN LEGAL:</text>
+  <text x="250" y="525" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">Pengujian keamanan wireless WAJIB memiliki izin tertulis dari pemilik jaringan.</text>
+  <text x="75" y="550" font-family="Arial, sans-serif" font-size="11" fill="#2d3748">Melakukan scanning atau serangan tanpa izin merupakan TINDAKAN ILEGAL yang dapat dikenai sanksi pidana dan perdata.</text>
+</svg>
