@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 600">
+  <defs>
+    <linearGradient id="safeGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#27AE60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E8449;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dangerRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#922B21;stop-opacity:1" />
+    </linearGradient>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="600" fill="#F0F3F4"/>
+  
+  <!-- Title -->
+  <text x="475" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50" text-anchor="middle">
+    Perbandingan: Perangkat Normal vs Rooted/Jailbroken
+  </text>
+  
+  <!-- Left Side: Normal Device -->
+  <g transform="translate(50, 70)">
+    <!-- Header -->
+    <rect x="0" y="0" width="400" height="50" rx="8" fill="url(#safeGreen)" filter="url(#phoneShadow)"/>
+    <text x="200" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+      ✅ PERANGKAT NORMAL
+    </text>
+    
+    <!-- Phone illustration -->
+    <g transform="translate(130, 70)" filter="url(#phoneShadow)">
+      <rect x="0" y="0" width="140" height="250" rx="15" fill="#2C3E50" stroke="#1A252F" stroke-width="2"/>
+      <rect x="10" y="30" width="120" height="190" rx="3" fill="#ECF0F1"/>
+      <circle cx="70" cy="235" r="12" fill="#1A252F"/>
+      <rect x="50" y="12" width="40" height="6" rx="3" fill="#1A252F"/>
+      
+      <!-- Lock icon on screen -->
+      <g transform="translate(45, 80)">
+        <rect x="0" y="20" width="50" height="40" rx="5" fill="#27AE60"/>
+        <path d="M10 20 L10 10 Q10 0 25 0 Q40 0 40 10 L40 20" fill="none" stroke="#27AE60" stroke-width="5"/>
+        <circle cx="25" cy="40" r="5" fill="white"/>
+      </g>
+      
+      <text x="70" y="165" font-family="Arial, sans-serif" font-size="10" fill="#27AE60" text-anchor="middle">DILINDUNGI</text>
+    </g>
+    
+    <!-- Security Features -->
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="400" height="180" rx="8" fill="white" stroke="#27AE60" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1E8449">
+        Fitur Keamanan Aktif:
+      </text>
+      
+      <g transform="translate(20, 40)">
+        <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" fill="#333">✓ Sandbox aplikasi berfungsi penuh</text>
+        <text x="0" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">✓ SELinux/Sandbox iOS membatasi akses</text>
+        <text x="0" y="55" font-family="Arial, sans-serif" font-size="11" fill="#333">✓ Verified Boot menjamin integritas sistem</text>
+        <text x="0" y="75" font-family="Arial, sans-serif" font-size="11" fill="#333">✓ Play Protect/App Store review aktif</text>
+        <text x="0" y="95" font-family="Arial, sans-serif" font-size="11" fill="#333">✓ Enkripsi data penuh</text>
+        <text x="0" y="115" font-family="Arial, sans-serif" font-size="11" fill="#333">✓ Keystore/Keychain terlindungi hardware</text>
+        <text x="0" y="135" font-family="Arial, sans-serif" font-size="11" fill="#333">✓ Aplikasi banking/korporat berfungsi normal</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- VS Divider -->
+  <g transform="translate(465, 280)">
+    <circle cx="0" cy="0" r="25" fill="#7F8C8D"/>
+    <text x="0" y="7" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">VS</text>
+  </g>
+  <line x1="475" y1="120" x2="475" y2="240" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="475" y1="320" x2="475" y2="540" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Right Side: Rooted/Jailbroken Device -->
+  <g transform="translate(500, 70)">
+    <!-- Header -->
+    <rect x="0" y="0" width="400" height="50" rx="8" fill="url(#dangerRed)" filter="url(#phoneShadow)"/>
+    <text x="200" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+      ⚠️ ROOTED / JAILBROKEN
+    </text>
+    
+    <!-- Phone illustration -->
+    <g transform="translate(130, 70)" filter="url(#phoneShadow)">
+      <rect x="0" y="0" width="140" height="250" rx="15" fill="#2C3E50" stroke="#922B21" stroke-width="3"/>
+      <rect x="10" y="30" width="120" height="190" rx="3" fill="#FADBD8"/>
+      <circle cx="70" cy="235" r="12" fill="#1A252F"/>
+      <rect x="50" y="12" width="40" height="6" rx="3" fill="#1A252F"/>
+      
+      <!-- Broken lock icon on screen -->
+      <g transform="translate(45, 80)">
+        <rect x="0" y="20" width="50" height="40" rx="5" fill="#E74C3C"/>
+        <path d="M10 20 L10 10 Q10 0 25 0 Q40 0 40 10 L40 20" fill="none" stroke="#E74C3C" stroke-width="5"/>
+        <line x1="10" y1="30" x2="40" y2="55" stroke="white" stroke-width="4"/>
+        <line x1="40" y1="30" x2="10" y2="55" stroke="white" stroke-width="4"/>
+      </g>
+      
+      <text x="70" y="165" font-family="Arial, sans-serif" font-size="10" fill="#E74C3C" text-anchor="middle">TERBUKA</text>
+      
+      <!-- Root/Jailbreak indicators -->
+      <text x="70" y="200" font-family="Arial, sans-serif" font-size="9" fill="#922B21" text-anchor="middle">su / Cydia</text>
+    </g>
+    
+    <!-- Security Risks -->
+    <g transform="translate(0, 340)">
+      <rect x="0" y="0" width="400" height="180" rx="8" fill="white" stroke="#E74C3C" stroke-width="2"/>
+      <text x="20" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#922B21">
+        Risiko Keamanan:
+      </text>
+      
+      <g transform="translate(20, 40)">
+        <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" fill="#333">✗ Sandbox dapat di-bypass</text>
+        <text x="0" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">✗ SELinux/proteksi sistem dinonaktifkan</text>
+        <text x="0" y="55" font-family="Arial, sans-serif" font-size="11" fill="#333">✗ Verified Boot tidak efektif</text>
+        <text x="0" y="75" font-family="Arial, sans-serif" font-size="11" fill="#333">✗ Dapat instal app dari sumber manapun</text>
+        <text x="0" y="95" font-family="Arial, sans-serif" font-size="11" fill="#333">✗ Malware dapat akses root/system</text>
+        <text x="0" y="115" font-family="Arial, sans-serif" font-size="11" fill="#333">✗ Keystore/Keychain bisa diakses</text>
+        <text x="0" y="135" font-family="Arial, sans-serif" font-size="11" fill="#333">✗ Banyak app banking/korporat diblokir</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Bottom Comparison Table -->
+  <g transform="translate(50, 545)">
+    <rect x="0" y="0" width="850" height="40" rx="5" fill="#EBEDEF"/>
+    
+    <text x="120" y="26" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50" text-anchor="middle">
+      <tspan font-weight="bold">Fleksibilitas:</tspan> Terbatas
+    </text>
+    <text x="300" y="26" font-family="Arial, sans-serif" font-size="11" fill="#27AE60" text-anchor="middle">
+      <tspan font-weight="bold">Keamanan:</tspan> Tinggi ✓
+    </text>
+    
+    <line x1="425" y1="5" x2="425" y2="35" stroke="#BDC3C7" stroke-width="1"/>
+    
+    <text x="550" y="26" font-family="Arial, sans-serif" font-size="11" fill="#2C3E50" text-anchor="middle">
+      <tspan font-weight="bold">Fleksibilitas:</tspan> Penuh
+    </text>
+    <text x="730" y="26" font-family="Arial, sans-serif" font-size="11" fill="#E74C3C" text-anchor="middle">
+      <tspan font-weight="bold">Keamanan:</tspan> Rendah ✗
+    </text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="475" y="595" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+    Modul 14: Keamanan Platform Mobile - Universitas Pertahanan RI
+  </text>
+</svg>

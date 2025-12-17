@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750">
+  <defs>
+    <linearGradient id="owaspRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0392B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="owaspOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D68910;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="owaspYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F1C40F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AC0D;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow4" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="750" fill="#F9F9F9"/>
+  
+  <!-- OWASP Logo Area -->
+  <rect x="350" y="15" width="300" height="45" rx="5" fill="#2C3E50"/>
+  <text x="500" y="45" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">
+    OWASP Mobile Top 10
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="500" y="80" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">
+    10 Risiko Keamanan Aplikasi Mobile Paling Kritis
+  </text>
+  
+  <!-- Risk Items - Column 1 -->
+  <g transform="translate(30, 100)">
+    <!-- M1 -->
+    <g filter="url(#shadow4)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspRed)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">M1</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Penggunaan Platform yang Tidak Tepat</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="white" fill-opacity="0.9">
+        Tidak memanfaatkan fitur keamanan platform dengan benar
+      </text>
+      <circle cx="20" cy="27" r="12" fill="white" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">1</text>
+    </g>
+    
+    <!-- M2 -->
+    <g filter="url(#shadow4)" transform="translate(0, 65)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspRed)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">M2</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Penyimpanan Data yang Tidak Aman</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="white" fill-opacity="0.9">
+        Data sensitif disimpan tanpa enkripsi atau proteksi memadai
+      </text>
+      <circle cx="20" cy="27" r="12" fill="white" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">2</text>
+    </g>
+    
+    <!-- M3 -->
+    <g filter="url(#shadow4)" transform="translate(0, 130)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspRed)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">M3</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Komunikasi yang Tidak Aman</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="white" fill-opacity="0.9">
+        Transmisi data tanpa enkripsi atau validasi sertifikat yang lemah
+      </text>
+      <circle cx="20" cy="27" r="12" fill="white" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">3</text>
+    </g>
+    
+    <!-- M4 -->
+    <g filter="url(#shadow4)" transform="translate(0, 195)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspOrange)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">M4</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Autentikasi yang Tidak Aman</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="white" fill-opacity="0.9">
+        Mekanisme verifikasi identitas yang lemah atau cacat
+      </text>
+      <circle cx="20" cy="27" r="12" fill="white" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">4</text>
+    </g>
+    
+    <!-- M5 -->
+    <g filter="url(#shadow4)" transform="translate(0, 260)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspOrange)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">M5</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Kriptografi yang Tidak Memadai</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="white" fill-opacity="0.9">
+        Algoritma lemah, manajemen kunci yang buruk
+      </text>
+      <circle cx="20" cy="27" r="12" fill="white" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">5</text>
+    </g>
+  </g>
+  
+  <!-- Risk Items - Column 2 -->
+  <g transform="translate(520, 100)">
+    <!-- M6 -->
+    <g filter="url(#shadow4)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspOrange)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">M6</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Otorisasi yang Tidak Aman</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="white" fill-opacity="0.9">
+        Keputusan akses yang tidak tepat setelah autentikasi
+      </text>
+      <circle cx="20" cy="27" r="12" fill="white" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">6</text>
+    </g>
+    
+    <!-- M7 -->
+    <g filter="url(#shadow4)" transform="translate(0, 65)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspYellow)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">M7</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">Kualitas Kode yang Buruk</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="#333" fill-opacity="0.9">
+        Buffer overflow, memory leak, race condition
+      </text>
+      <circle cx="20" cy="27" r="12" fill="#333" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333" text-anchor="middle">7</text>
+    </g>
+    
+    <!-- M8 -->
+    <g filter="url(#shadow4)" transform="translate(0, 130)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspYellow)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">M8</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">Pengubahan Kode (Code Tampering)</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="#333" fill-opacity="0.9">
+        Modifikasi biner aplikasi untuk tujuan jahat
+      </text>
+      <circle cx="20" cy="27" r="12" fill="#333" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333" text-anchor="middle">8</text>
+    </g>
+    
+    <!-- M9 -->
+    <g filter="url(#shadow4)" transform="translate(0, 195)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspYellow)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">M9</text>
+      <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">Reverse Engineering</text>
+      <text x="70" y="43" font-family="Arial, sans-serif" font-size="10" fill="#333" fill-opacity="0.9">
+        Analisis aplikasi untuk memahami logika dan menemukan kelemahan
+      </text>
+      <circle cx="20" cy="27" r="12" fill="#333" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333" text-anchor="middle">9</text>
+    </g>
+    
+    <!-- M10 -->
+    <g filter="url(#shadow4)" transform="translate(0, 260)">
+      <rect x="0" y="0" width="450" height="55" rx="5" fill="url(#owaspYellow)"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">M10</text>
+      <text x="75" y="25" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">Fungsionalitas Tidak Diperlukan</text>
+      <text x="75" y="43" font-family="Arial, sans-serif" font-size="10" fill="#333" fill-opacity="0.9">
+        Fitur debug/test yang tidak sengaja masuk ke produksi
+      </text>
+      <circle cx="20" cy="27" r="12" fill="#333" fill-opacity="0.2"/>
+      <text x="20" y="32" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333" text-anchor="middle">10</text>
+    </g>
+  </g>
+  
+  <!-- Impact Categories -->
+  <g transform="translate(30, 480)">
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+      Kategori Dampak:
+    </text>
+    
+    <!-- High Impact -->
+    <g transform="translate(0, 35)">
+      <rect x="0" y="0" width="300" height="80" rx="8" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+      <rect x="0" y="0" width="80" height="80" rx="8" fill="#E74C3C"/>
+      <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle">🔴</text>
+      <text x="95" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C0392B">DAMPAK TINGGI</text>
+      <text x="95" y="50" font-family="Arial, sans-serif" font-size="10" fill="#333">M1, M2, M3</text>
+      <text x="95" y="68" font-family="Arial, sans-serif" font-size="9" fill="#666">Kebocoran data sensitif langsung</text>
+    </g>
+    
+    <!-- Medium Impact -->
+    <g transform="translate(330, 35)">
+      <rect x="0" y="0" width="300" height="80" rx="8" fill="#FFF3E0" stroke="#F39C12" stroke-width="2"/>
+      <rect x="0" y="0" width="80" height="80" rx="8" fill="#F39C12"/>
+      <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle">🟠</text>
+      <text x="95" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D68910">DAMPAK SEDANG</text>
+      <text x="95" y="50" font-family="Arial, sans-serif" font-size="10" fill="#333">M4, M5, M6</text>
+      <text x="95" y="68" font-family="Arial, sans-serif" font-size="9" fill="#666">Akses tidak sah ke fungsi/data</text>
+    </g>
+    
+    <!-- Lower Impact -->
+    <g transform="translate(660, 35)">
+      <rect x="0" y="0" width="300" height="80" rx="8" fill="#FFFDE7" stroke="#F1C40F" stroke-width="2"/>
+      <rect x="0" y="0" width="80" height="80" rx="8" fill="#F1C40F"/>
+      <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" fill="#333" text-anchor="middle">🟡</text>
+      <text x="95" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D4AC0D">DAMPAK LEBIH RENDAH</text>
+      <text x="95" y="50" font-family="Arial, sans-serif" font-size="10" fill="#333">M7, M8, M9, M10</text>
+      <text x="95" y="68" font-family="Arial, sans-serif" font-size="9" fill="#666">Memerlukan eksploitasi tambahan</text>
+    </g>
+  </g>
+  
+  <!-- Best Practices Summary -->
+  <g transform="translate(30, 620)">
+    <rect x="0" y="0" width="940" height="90" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow4)"/>
+    <text x="470" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32" text-anchor="middle">
+      🛡️ STRATEGI MITIGASI UTAMA
+    </text>
+    
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Gunakan API keamanan platform (Keychain/Keystore)
+      </text>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Enkripsi semua data sensitif
+      </text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Implementasikan certificate pinning
+      </text>
+    </g>
+    
+    <g transform="translate(320, 40)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Validasi input di sisi server
+      </text>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Gunakan autentikasi multi-faktor
+      </text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Terapkan obfuscation kode
+      </text>
+    </g>
+    
+    <g transform="translate(620, 40)">
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Lakukan security testing regular
+      </text>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Hapus fitur debug di production
+      </text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="10" fill="#333">
+        ✓ Ikuti OWASP MASVS guidelines
+      </text>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <text x="500" y="735" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+    Modul 14: Keamanan Platform Mobile - Universitas Pertahanan RI | Sumber: OWASP Mobile Top 10
+  </text>
+</svg>

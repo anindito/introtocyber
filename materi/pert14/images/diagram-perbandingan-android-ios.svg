@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
+  <defs>
+    <linearGradient id="androidG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A4C639;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#78A030;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iosB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0055B3;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="650" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="500" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">
+    Perbandingan Keamanan: Android vs iOS
+  </text>
+  
+  <!-- Android Column Header -->
+  <g filter="url(#shadow3)">
+    <rect x="50" y="55" width="420" height="50" rx="8" fill="url(#androidG)"/>
+    <text x="260" y="87" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      🤖 ANDROID
+    </text>
+  </g>
+  
+  <!-- iOS Column Header -->
+  <g filter="url(#shadow3)">
+    <rect x="530" y="55" width="420" height="50" rx="8" fill="url(#iosB)"/>
+    <text x="740" y="87" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      🍎 iOS
+    </text>
+  </g>
+  
+  <!-- VS Divider -->
+  <line x1="500" y1="115" x2="500" y2="600" stroke="#DDD" stroke-width="2" stroke-dasharray="5,5"/>
+  <circle cx="500" cy="85" r="18" fill="#E74C3C"/>
+  <text x="500" y="91" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">VS</text>
+  
+  <!-- Row 1: Source Code -->
+  <g transform="translate(0, 120)">
+    <rect x="50" y="0" width="420" height="60" rx="5" fill="#E8F5E9" filter="url(#shadow3)"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">KODE SUMBER</text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Open Source (AOSP)</text>
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Dapat diaudit oleh komunitas keamanan</text>
+    
+    <rect x="530" y="0" width="420" height="60" rx="5" fill="#E3F2FD" filter="url(#shadow3)"/>
+    <text x="550" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">KODE SUMBER</text>
+    <text x="550" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Closed Source (Proprietary)</text>
+    <text x="550" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Keamanan bergantung pada praktik Apple</text>
+  </g>
+  
+  <!-- Row 2: App Distribution -->
+  <g transform="translate(0, 190)">
+    <rect x="50" y="0" width="420" height="70" rx="5" fill="#E8F5E9" filter="url(#shadow3)"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">DISTRIBUSI APLIKASI</text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Play Store + Sideloading diizinkan</text>
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Fleksibel tapi risiko lebih tinggi</text>
+    <circle cx="440" cy="35" r="12" fill="#FFA726"/>
+    <text x="440" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">⚠</text>
+    
+    <rect x="530" y="0" width="420" height="70" rx="5" fill="#E3F2FD" filter="url(#shadow3)"/>
+    <text x="550" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">DISTRIBUSI APLIKASI</text>
+    <text x="550" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">App Store Only (tanpa jailbreak)</text>
+    <text x="550" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Lebih terkontrol, review ketat</text>
+    <circle cx="920" cy="35" r="12" fill="#4CAF50"/>
+    <text x="920" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  </g>
+  
+  <!-- Row 3: Updates -->
+  <g transform="translate(0, 270)">
+    <rect x="50" y="0" width="420" height="70" rx="5" fill="#E8F5E9" filter="url(#shadow3)"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">PEMBARUAN KEAMANAN</text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Tergantung produsen perangkat</text>
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Fragmentasi: update tidak merata</text>
+    <circle cx="440" cy="35" r="12" fill="#F44336"/>
+    <text x="440" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">✗</text>
+    
+    <rect x="530" y="0" width="420" height="70" rx="5" fill="#E3F2FD" filter="url(#shadow3)"/>
+    <text x="550" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">PEMBARUAN KEAMANAN</text>
+    <text x="550" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Langsung dari Apple ke perangkat</text>
+    <text x="550" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Dukungan 5-6 tahun, update cepat</text>
+    <circle cx="920" cy="35" r="12" fill="#4CAF50"/>
+    <text x="920" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  </g>
+  
+  <!-- Row 4: Sandbox -->
+  <g transform="translate(0, 350)">
+    <rect x="50" y="0" width="420" height="60" rx="5" fill="#E8F5E9" filter="url(#shadow3)"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">ISOLASI APLIKASI</text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Linux-based sandbox + SELinux</text>
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Kuat dengan konfigurasi tepat</text>
+    
+    <rect x="530" y="0" width="420" height="60" rx="5" fill="#E3F2FD" filter="url(#shadow3)"/>
+    <text x="550" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">ISOLASI APLIKASI</text>
+    <text x="550" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">TrustedBSD sandbox, sangat ketat</text>
+    <text x="550" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Lebih membatasi antar-app access</text>
+  </g>
+  
+  <!-- Row 5: Hardware Security -->
+  <g transform="translate(0, 420)">
+    <rect x="50" y="0" width="420" height="70" rx="5" fill="#E8F5E9" filter="url(#shadow3)"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">KEAMANAN HARDWARE</text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">TEE, Hardware Keystore, StrongBox</text>
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Bervariasi tergantung chip (Titan M, Knox)</text>
+    <circle cx="440" cy="35" r="12" fill="#FFA726"/>
+    <text x="440" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">~</text>
+    
+    <rect x="530" y="0" width="420" height="70" rx="5" fill="#E3F2FD" filter="url(#shadow3)"/>
+    <text x="550" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">KEAMANAN HARDWARE</text>
+    <text x="550" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Secure Enclave terintegrasi</text>
+    <text x="550" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Konsisten di semua perangkat Apple</text>
+    <circle cx="920" cy="35" r="12" fill="#4CAF50"/>
+    <text x="920" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  </g>
+  
+  <!-- Row 6: Customization -->
+  <g transform="translate(0, 500)">
+    <rect x="50" y="0" width="420" height="60" rx="5" fill="#E8F5E9" filter="url(#shadow3)"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E7D32">FLEKSIBILITAS PENGGUNA</text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Sangat fleksibel, banyak opsi</text>
+    <text x="70" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Dapat dikustomisasi secara mendalam</text>
+    <circle cx="440" cy="35" r="12" fill="#4CAF50"/>
+    <text x="440" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+    
+    <rect x="530" y="0" width="420" height="60" rx="5" fill="#E3F2FD" filter="url(#shadow3)"/>
+    <text x="550" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1565C0">FLEKSIBILITAS PENGGUNA</text>
+    <text x="550" y="40" font-family="Arial, sans-serif" font-size="11" fill="#333">Terbatas, "walled garden"</text>
+    <text x="550" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Keamanan > kustomisasi</text>
+    <circle cx="920" cy="35" r="12" fill="#FFA726"/>
+    <text x="920" y="39" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">~</text>
+  </g>
+  
+  <!-- Summary Box -->
+  <g transform="translate(50, 575)">
+    <rect x="0" y="0" width="900" height="50" rx="8" fill="#ECEFF1" filter="url(#shadow3)"/>
+    <text x="450" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#37474F" text-anchor="middle">
+      KESIMPULAN
+    </text>
+    <text x="450" y="38" font-family="Arial, sans-serif" font-size="11" fill="#546E7A" text-anchor="middle">
+      Android: Fleksibel namun memerlukan perhatian lebih | iOS: Lebih terkontrol dengan keamanan terintegrasi
+    </text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(680, 570)">
+    <circle cx="10" cy="10" r="8" fill="#4CAF50"/>
+    <text x="25" y="14" font-family="Arial, sans-serif" font-size="10" fill="#333">Keunggulan</text>
+    
+    <circle cx="100" cy="10" r="8" fill="#FFA726"/>
+    <text x="115" y="14" font-family="Arial, sans-serif" font-size="10" fill="#333">Menengah</text>
+    
+    <circle cx="190" cy="10" r="8" fill="#F44336"/>
+    <text x="205" y="14" font-family="Arial, sans-serif" font-size="10" fill="#333">Kelemahan</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="500" y="640" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+    Modul 14: Keamanan Platform Mobile - Universitas Pertahanan RI
+  </text>
+</svg>

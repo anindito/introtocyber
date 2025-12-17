@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="iosBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0055B3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iosGray" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8E8E93;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#636366;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iosPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5856D6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3634A3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iosOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC7700;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iosGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34C759;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#248A3D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="secureEnclave" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A252F;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#F8F8F8"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">
+    Arsitektur Keamanan iOS
+  </text>
+  
+  <!-- Layer 1: Applications -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="70" width="600" height="85" rx="10" fill="url(#iosBlue)"/>
+    <text x="350" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      LAPISAN APLIKASI
+    </text>
+    
+    <!-- App boxes -->
+    <rect x="70" y="110" width="90" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="115" y="132" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">App Store Apps</text>
+    
+    <rect x="175" y="110" width="90" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="220" y="132" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">System Apps</text>
+    
+    <rect x="280" y="110" width="90" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="325" y="132" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Extensions</text>
+    
+    <rect x="385" y="110" width="120" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="445" y="132" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Enterprise Apps</text>
+    
+    <rect x="520" y="110" width="110" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="575" y="132" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Widgets</text>
+  </g>
+  
+  <!-- Secure Enclave - Side component -->
+  <g filter="url(#shadow2)">
+    <rect x="680" y="70" width="170" height="235" rx="10" fill="url(#secureEnclave)"/>
+    <text x="765" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SECURE
+    </text>
+    <text x="765" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      ENCLAVE
+    </text>
+    
+    <!-- Secure Enclave components -->
+    <rect x="695" y="130" width="140" height="28" rx="5" fill="#4A6572"/>
+    <text x="765" y="149" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Touch ID / Face ID</text>
+    
+    <rect x="695" y="165" width="140" height="28" rx="5" fill="#4A6572"/>
+    <text x="765" y="184" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Kunci Kriptografi</text>
+    
+    <rect x="695" y="200" width="140" height="28" rx="5" fill="#4A6572"/>
+    <text x="765" y="219" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Apple Pay</text>
+    
+    <rect x="695" y="235" width="140" height="28" rx="5" fill="#4A6572"/>
+    <text x="765" y="254" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Device Passcode</text>
+    
+    <rect x="695" y="270" width="140" height="25" rx="5" fill="#4A6572"/>
+    <text x="765" y="287" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">🔐 Prosesor Terpisah</text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M350 155 L350 170 L340 170 L350 185 L360 170 L350 170" fill="#666"/>
+  
+  <!-- Layer 2: Cocoa Touch / App Services -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="190" width="600" height="75" rx="10" fill="url(#iosPurple)"/>
+    <text x="350" y="218" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      APP SERVICES &amp; SECURITY FRAMEWORKS
+    </text>
+    
+    <!-- Framework boxes -->
+    <rect x="70" y="228" width="95" height="28" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="117" y="247" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Keychain</text>
+    
+    <rect x="175" y="228" width="95" height="28" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="222" y="247" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Data Protection</text>
+    
+    <rect x="280" y="228" width="110" height="28" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="335" y="247" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">App Transport Sec</text>
+    
+    <rect x="400" y="228" width="110" height="28" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="455" y="247" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">CryptoKit</text>
+    
+    <rect x="520" y="228" width="110" height="28" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="575" y="247" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">LocalAuth</text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M350 265 L350 280 L340 280 L350 295 L360 280 L350 280" fill="#666"/>
+  
+  <!-- Layer 3: Core OS -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="300" width="600" height="80" rx="10" fill="url(#iosOrange)"/>
+    <text x="350" y="328" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      CORE OS &amp; SANDBOX
+    </text>
+    
+    <!-- Core OS components -->
+    <rect x="70" y="340" width="130" height="30" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="135" y="360" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">App Sandbox</text>
+    
+    <rect x="215" y="340" width="130" height="30" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="280" y="360" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Code Signing</text>
+    
+    <rect x="360" y="340" width="130" height="30" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="425" y="360" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Entitlements</text>
+    
+    <rect x="505" y="340" width="130" height="30" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="570" y="360" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">ASLR</text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M350 380 L350 395 L340 395 L350 410 L360 395 L350 395" fill="#666"/>
+  
+  <!-- Layer 4: XNU Kernel -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="415" width="800" height="85" rx="10" fill="url(#iosGray)"/>
+    <text x="450" y="443" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      XNU KERNEL &amp; SECURE BOOT
+    </text>
+    
+    <!-- Kernel components -->
+    <rect x="70" y="455" width="120" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="130" y="477" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Secure Boot Chain</text>
+    
+    <rect x="205" y="455" width="120" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="265" y="477" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">KPP/KTRR</text>
+    
+    <rect x="340" y="455" width="120" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="400" y="477" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">PAC (A12+)</text>
+    
+    <rect x="475" y="455" width="120" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="535" y="477" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">System Integrity</text>
+    
+    <rect x="610" y="455" width="120" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="670" y="477" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">File Encryption</text>
+    
+    <rect x="745" y="455" width="90" height="35" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="790" y="477" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">SEP Driver</text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M450 500 L450 515 L440 515 L450 530 L460 515 L450 515" fill="#666"/>
+  
+  <!-- Layer 5: Hardware -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="535" width="800" height="75" rx="10" fill="url(#iosGreen)"/>
+    <text x="450" y="563" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      HARDWARE SECURITY
+    </text>
+    
+    <!-- Hardware components -->
+    <rect x="80" y="575" width="130" height="25" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="145" y="592" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Boot ROM</text>
+    
+    <rect x="225" y="575" width="130" height="25" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="290" y="592" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Hardware AES</text>
+    
+    <rect x="370" y="575" width="130" height="25" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="435" y="592" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Device UID</text>
+    
+    <rect x="515" y="575" width="130" height="25" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="580" y="592" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Group ID (GID)</text>
+    
+    <rect x="660" y="575" width="170" height="25" rx="5" fill="white" fill-opacity="0.2"/>
+    <text x="745" y="592" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Apple Silicon (M/A Series)</text>
+  </g>
+  
+  <!-- Boot Chain Visualization -->
+  <g transform="translate(50, 625)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Secure Boot Chain:</text>
+    
+    <rect x="130" y="0" width="70" height="25" rx="3" fill="#2C3E50"/>
+    <text x="165" y="17" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Boot ROM</text>
+    
+    <path d="M200 12 L215 12" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <rect x="220" y="0" width="50" height="25" rx="3" fill="#34495E"/>
+    <text x="245" y="17" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">LLB</text>
+    
+    <path d="M270 12 L285 12" stroke="#666" stroke-width="2"/>
+    
+    <rect x="290" y="0" width="55" height="25" rx="3" fill="#5D6D7E"/>
+    <text x="317" y="17" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">iBoot</text>
+    
+    <path d="M345 12 L360 12" stroke="#666" stroke-width="2"/>
+    
+    <rect x="365" y="0" width="55" height="25" rx="3" fill="#7F8C8D"/>
+    <text x="392" y="17" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Kernel</text>
+    
+    <path d="M420 12 L435 12" stroke="#666" stroke-width="2"/>
+    
+    <rect x="440" y="0" width="50" height="25" rx="3" fill="#95A5A6"/>
+    <text x="465" y="17" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">iOS</text>
+    
+    <text x="520" y="17" font-family="Arial, sans-serif" font-size="10" fill="#27AE60">✓ Verified</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(620, 625)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" fill="#333">🔒 = Komponen Terenkripsi/Terverifikasi</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="450" y="685" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    Modul 14: Keamanan Platform Mobile - Universitas Pertahanan RI
+  </text>
+</svg>

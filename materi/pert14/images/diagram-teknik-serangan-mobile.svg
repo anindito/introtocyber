@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 700">
+  <defs>
+    <linearGradient id="attackRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C0392B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E74C3C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="networkBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2980B9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:1" />
+    </linearGradient>
+    <filter id="attackShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="700" fill="#F5F6FA"/>
+  
+  <!-- Title -->
+  <text x="475" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50" text-anchor="middle">
+    Teknik Serangan pada Perangkat Mobile
+  </text>
+  
+  <!-- Category 1: Network Attacks -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="430" height="280" rx="10" fill="white" stroke="#3498DB" stroke-width="2" filter="url(#attackShadow)"/>
+    <rect x="0" y="0" width="430" height="45" rx="10" fill="url(#networkBlue)"/>
+    <rect x="0" y="35" width="430" height="10" fill="url(#networkBlue)"/>
+    <text x="215" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      📡 SERANGAN JARINGAN
+    </text>
+    
+    <!-- Attack 1: Evil Twin -->
+    <g transform="translate(15, 55)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#EBF5FB"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A5276">Evil Twin WiFi</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Hotspot palsu yang meniru jaringan WiFi yang sah untuk mencuri data
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📶</text>
+    </g>
+    
+    <!-- Attack 2: MITM -->
+    <g transform="translate(15, 115)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#EBF5FB"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A5276">Man-in-the-Middle (MITM)</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Mengintersepsi komunikasi antara perangkat dan server untuk mencuri/modifikasi data
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🔀</text>
+    </g>
+    
+    <!-- Attack 3: SSL Stripping -->
+    <g transform="translate(15, 175)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#EBF5FB"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A5276">SSL Stripping</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Menurunkan koneksi HTTPS ke HTTP untuk menyadap data yang tidak terenkripsi
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🔓</text>
+    </g>
+    
+    <!-- Attack 4: DNS Spoofing -->
+    <g transform="translate(15, 235)">
+      <rect x="0" y="0" width="400" height="35" rx="5" fill="#EBF5FB"/>
+      <text x="15" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A5276">DNS Spoofing</text>
+      <text x="200" y="22" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Mengarahkan ke server palsu
+      </text>
+      <text x="370" y="22" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">🌐</text>
+    </g>
+  </g>
+  
+  <!-- Category 2: Telecom Attacks -->
+  <g transform="translate(490, 70)">
+    <rect x="0" y="0" width="430" height="280" rx="10" fill="white" stroke="#E74C3C" stroke-width="2" filter="url(#attackShadow)"/>
+    <rect x="0" y="0" width="430" height="45" rx="10" fill="url(#attackRed)"/>
+    <rect x="0" y="35" width="430" height="10" fill="url(#attackRed)"/>
+    <text x="215" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      📱 SERANGAN TELEKOMUNIKASI
+    </text>
+    
+    <!-- Attack 1: SIM Swapping -->
+    <g transform="translate(15, 55)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#FDEDEC"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#922B21">SIM Swapping</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Meyakinkan operator untuk transfer nomor korban ke SIM penyerang
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">💳</text>
+    </g>
+    
+    <!-- Attack 2: SS7 -->
+    <g transform="translate(15, 115)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#FDEDEC"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#922B21">SS7 Exploitation</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Eksploitasi kerentanan protokol pensinyalan untuk intersepsi SMS/panggilan
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📞</text>
+    </g>
+    
+    <!-- Attack 3: SMS Phishing -->
+    <g transform="translate(15, 175)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#FDEDEC"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#922B21">SMS Phishing (Smishing)</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Pesan SMS palsu yang mengarahkan ke situs phishing atau malware
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">💬</text>
+    </g>
+    
+    <!-- Attack 4: Baseband Attack -->
+    <g transform="translate(15, 235)">
+      <rect x="0" y="0" width="400" height="35" rx="5" fill="#FDEDEC"/>
+      <text x="15" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#922B21">Baseband Attack</text>
+      <text x="175" y="22" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Eksploitasi prosesor modem seluler
+      </text>
+      <text x="370" y="22" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">📡</text>
+    </g>
+  </g>
+  
+  <!-- Category 3: Physical/Proximity Attacks -->
+  <g transform="translate(30, 370)">
+    <rect x="0" y="0" width="430" height="230" rx="10" fill="white" stroke="#9B59B6" stroke-width="2" filter="url(#attackShadow)"/>
+    <rect x="0" y="0" width="430" height="45" rx="10" fill="#9B59B6"/>
+    <rect x="0" y="35" width="430" height="10" fill="#9B59B6"/>
+    <text x="215" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      📍 SERANGAN JARAK DEKAT
+    </text>
+    
+    <!-- Attack 1: Bluetooth -->
+    <g transform="translate(15, 55)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#F5EEF8"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6C3483">Bluetooth Attacks</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Bluesnarfing (pencurian data), Bluejacking, Bluebugging (kontrol perangkat)
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🔵</text>
+    </g>
+    
+    <!-- Attack 2: NFC -->
+    <g transform="translate(15, 115)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#F5EEF8"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6C3483">NFC Relay Attack</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Meneruskan komunikasi NFC untuk transaksi tanpa kehadiran fisik korban
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">💳</text>
+    </g>
+    
+    <!-- Attack 3: Juice Jacking -->
+    <g transform="translate(15, 175)">
+      <rect x="0" y="0" width="400" height="45" rx="5" fill="#F5EEF8"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6C3483">Juice Jacking</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Stasiun pengisian USB berbahaya yang mencuri data atau memasang malware
+      </text>
+      <text x="370" y="27" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🔌</text>
+    </g>
+  </g>
+  
+  <!-- Category 4: Application Attacks -->
+  <g transform="translate(490, 370)">
+    <rect x="0" y="0" width="430" height="230" rx="10" fill="white" stroke="#F39C12" stroke-width="2" filter="url(#attackShadow)"/>
+    <rect x="0" y="0" width="430" height="45" rx="10" fill="#F39C12"/>
+    <rect x="0" y="35" width="430" height="10" fill="#F39C12"/>
+    <text x="215" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      📲 SERANGAN APLIKASI
+    </text>
+    
+    <!-- Attack 1: Overlay -->
+    <g transform="translate(15, 55)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#FEF5E7"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9C640C">Overlay Attack</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Menampilkan layar palsu di atas aplikasi sah untuk mencuri kredensial
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🎭</text>
+    </g>
+    
+    <!-- Attack 2: Repackaging -->
+    <g transform="translate(15, 115)">
+      <rect x="0" y="0" width="400" height="50" rx="5" fill="#FEF5E7"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9C640C">App Repackaging</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Memodifikasi aplikasi sah dengan menyisipkan kode berbahaya
+      </text>
+      <text x="370" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">📦</text>
+    </g>
+    
+    <!-- Attack 3: Deeplink Hijacking -->
+    <g transform="translate(15, 175)">
+      <rect x="0" y="0" width="400" height="45" rx="5" fill="#FEF5E7"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9C640C">Deeplink/Intent Hijacking</text>
+      <text x="15" y="38" font-family="Arial, sans-serif" font-size="10" fill="#566573">
+        Mengeksploitasi URL scheme untuk mengarahkan ke aplikasi berbahaya
+      </text>
+      <text x="370" y="27" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">🔗</text>
+    </g>
+  </g>
+  
+  <!-- Defense Tips Box -->
+  <g transform="translate(30, 615)">
+    <rect x="0" y="0" width="890" height="60" rx="8" fill="#E8F8F5" stroke="#1ABC9C" stroke-width="2"/>
+    <text x="445" y="22" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0E6655" text-anchor="middle">
+      🛡️ PERTAHANAN: Gunakan VPN di WiFi publik | Hindari stasiun pengisian USB publik | Nonaktifkan Bluetooth/NFC saat tidak digunakan
+    </text>
+    <text x="445" y="45" font-family="Arial, sans-serif" font-size="12" fill="#117A65" text-anchor="middle">
+      Verifikasi aplikasi sebelum instal | Aktifkan autentikasi dua faktor | Waspadai SMS/link mencurigakan
+    </text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="475" y="690" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+    Modul 14: Keamanan Platform Mobile - Universitas Pertahanan RI
+  </text>
+</svg>
