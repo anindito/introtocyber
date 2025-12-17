@@ -18,6 +18,7 @@
 
 ---
 
+[Slide untuk Pertemuan Ini](https://anindito.github.io/intro/15/)
 ## Capaian Pembelajaran
 
 ### CPMK 6
