@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 650">
+  <defs>
+    <linearGradient id="iaasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="paasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="saasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e8449;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="onpremGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7f8c8d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5d6d7e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="providerGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="customerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:0.1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="650" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50" text-anchor="middle">
+    Diagram 8: Model Layanan Cloud Computing
+  </text>
+  <text x="475" y="50" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">
+    Perbandingan Tingkat Kontrol dan Tanggung Jawab
+  </text>
+  
+  <!-- Column Headers -->
+  <rect x="80" y="70" width="180" height="40" rx="8" fill="url(#onpremGrad)"/>
+  <text x="170" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">On-Premises</text>
+  
+  <rect x="280" y="70" width="180" height="40" rx="8" fill="url(#iaasGrad)"/>
+  <text x="370" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">IaaS</text>
+  
+  <rect x="480" y="70" width="180" height="40" rx="8" fill="url(#paasGrad)"/>
+  <text x="570" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">PaaS</text>
+  
+  <rect x="680" y="70" width="180" height="40" rx="8" fill="url(#saasGrad)"/>
+  <text x="770" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">SaaS</text>
+  
+  <!-- Stack Layers -->
+  <!-- Layer labels -->
+  <text x="40" y="145" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 145)">Aplikasi</text>
+  <text x="40" y="195" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 195)">Data</text>
+  <text x="40" y="245" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 245)">Runtime</text>
+  <text x="40" y="295" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 295)">Middleware</text>
+  <text x="40" y="345" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 345)">OS</text>
+  <text x="40" y="395" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 395)">Virtualisasi</text>
+  <text x="40" y="445" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 445)">Server</text>
+  <text x="40" y="495" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 495)">Storage</text>
+  <text x="40" y="545" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" transform="rotate(-90, 40, 545)">Network</text>
+  
+  <!-- On-Premises Column (All Customer) -->
+  <g>
+    <rect x="80" y="120" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="148" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Aplikasi</text>
+    
+    <rect x="80" y="165" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="193" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Data</text>
+    
+    <rect x="80" y="210" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="238" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Runtime</text>
+    
+    <rect x="80" y="255" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="283" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Middleware</text>
+    
+    <rect x="80" y="300" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="328" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Sistem Operasi</text>
+    
+    <rect x="80" y="345" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="373" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Virtualisasi</text>
+    
+    <rect x="80" y="390" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="418" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Server</text>
+    
+    <rect x="80" y="435" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="463" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Storage</text>
+    
+    <rect x="80" y="480" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="170" y="508" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Networking</text>
+  </g>
+  
+  <!-- IaaS Column -->
+  <g>
+    <rect x="280" y="120" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="370" y="148" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Aplikasi</text>
+    
+    <rect x="280" y="165" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="370" y="193" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Data</text>
+    
+    <rect x="280" y="210" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="370" y="238" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Runtime</text>
+    
+    <rect x="280" y="255" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="370" y="283" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Middleware</text>
+    
+    <rect x="280" y="300" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="370" y="328" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Sistem Operasi</text>
+    
+    <rect x="280" y="345" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="370" y="373" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Virtualisasi</text>
+    
+    <rect x="280" y="390" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="370" y="418" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Server</text>
+    
+    <rect x="280" y="435" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="370" y="463" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Storage</text>
+    
+    <rect x="280" y="480" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="370" y="508" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Networking</text>
+  </g>
+  
+  <!-- PaaS Column -->
+  <g>
+    <rect x="480" y="120" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="570" y="148" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Aplikasi</text>
+    
+    <rect x="480" y="165" width="180" height="45" fill="#3498db" stroke="white" stroke-width="1"/>
+    <text x="570" y="193" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Data</text>
+    
+    <rect x="480" y="210" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="570" y="238" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Runtime</text>
+    
+    <rect x="480" y="255" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="570" y="283" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Middleware</text>
+    
+    <rect x="480" y="300" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="570" y="328" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Sistem Operasi</text>
+    
+    <rect x="480" y="345" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="570" y="373" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Virtualisasi</text>
+    
+    <rect x="480" y="390" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="570" y="418" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Server</text>
+    
+    <rect x="480" y="435" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="570" y="463" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Storage</text>
+    
+    <rect x="480" y="480" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="570" y="508" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Networking</text>
+  </g>
+  
+  <!-- SaaS Column -->
+  <g>
+    <rect x="680" y="120" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="148" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Aplikasi</text>
+    
+    <rect x="680" y="165" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="193" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Data</text>
+    
+    <rect x="680" y="210" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="238" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Runtime</text>
+    
+    <rect x="680" y="255" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="283" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Middleware</text>
+    
+    <rect x="680" y="300" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="328" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Sistem Operasi</text>
+    
+    <rect x="680" y="345" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="373" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Virtualisasi</text>
+    
+    <rect x="680" y="390" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="418" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Server</text>
+    
+    <rect x="680" y="435" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="463" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Storage</text>
+    
+    <rect x="680" y="480" width="180" height="45" fill="#e74c3c" stroke="white" stroke-width="1"/>
+    <text x="770" y="508" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Networking</text>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="80" y="540" width="780" height="100" rx="10" fill="#ecf0f1"/>
+  
+  <rect x="100" y="560" width="25" height="25" fill="#3498db"/>
+  <text x="135" y="578" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Dikelola Pelanggan</text>
+  
+  <rect x="280" y="560" width="25" height="25" fill="#e74c3c"/>
+  <text x="315" y="578" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Dikelola Penyedia Cloud</text>
+  
+  <!-- Examples -->
+  <text x="100" y="610" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">
+    <tspan font-weight="bold">Contoh IaaS:</tspan> AWS EC2, Azure VM, Google Compute Engine
+  </text>
+  <text x="100" y="625" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">
+    <tspan font-weight="bold">Contoh PaaS:</tspan> Heroku, Google App Engine, Azure App Service
+  </text>
+  <text x="550" y="610" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">
+    <tspan font-weight="bold">Contoh SaaS:</tspan> Google Workspace, Microsoft 365, Salesforce
+  </text>
+  <text x="550" y="625" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">
+    <tspan font-weight="bold">Kontrol Pelanggan:</tspan> IaaS (Tinggi) → PaaS (Sedang) → SaaS (Rendah)
+  </text>
+</svg>

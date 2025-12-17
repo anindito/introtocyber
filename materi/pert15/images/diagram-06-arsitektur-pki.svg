@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 650">
+  <defs>
+    <linearGradient id="rootCAGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0392b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#922b21;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="intCAGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e67e22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="entityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="raGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e8449;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="950" height="650" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50" text-anchor="middle">
+    Diagram 6: Arsitektur Public Key Infrastructure (PKI)
+  </text>
+  
+  <!-- Trust Hierarchy Section -->
+  <rect x="30" y="50" width="550" height="420" rx="15" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="305" y="75" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d68910" text-anchor="middle">
+    HIERARKI KEPERCAYAAN (Chain of Trust)
+  </text>
+  
+  <!-- Root CA -->
+  <rect x="220" y="95" width="170" height="70" rx="10" fill="url(#rootCAGrad)" filter="url(#shadow)"/>
+  <text x="305" y="120" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">🏛️ ROOT CA</text>
+  <text x="305" y="140" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">Self-Signed Certificate</text>
+  <text x="305" y="155" font-family="Arial, sans-serif" font-size="8" fill="#f5b7b1" text-anchor="middle">(Paling Dipercaya)</text>
+  
+  <!-- Arrow from Root to Intermediate -->
+  <line x1="305" y1="165" x2="305" y2="195" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="350" y="185" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d">menandatangani</text>
+  
+  <!-- Intermediate CAs -->
+  <rect x="100" y="205" width="150" height="65" rx="10" fill="url(#intCAGrad)" filter="url(#shadow)"/>
+  <text x="175" y="230" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">📋 Intermediate CA 1</text>
+  <text x="175" y="248" font-family="Arial, sans-serif" font-size="8" fill="#fdebd0" text-anchor="middle">Ditandatangani Root CA</text>
+  <text x="175" y="262" font-family="Arial, sans-serif" font-size="8" fill="#fdebd0" text-anchor="middle">(DigiCert, Let's Encrypt)</text>
+  
+  <rect x="360" y="205" width="150" height="65" rx="10" fill="url(#intCAGrad)" filter="url(#shadow)"/>
+  <text x="435" y="230" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">📋 Intermediate CA 2</text>
+  <text x="435" y="248" font-family="Arial, sans-serif" font-size="8" fill="#fdebd0" text-anchor="middle">Ditandatangani Root CA</text>
+  <text x="435" y="262" font-family="Arial, sans-serif" font-size="8" fill="#fdebd0" text-anchor="middle">(Comodo, GlobalSign)</text>
+  
+  <!-- Lines from Root to Intermediates -->
+  <line x1="240" y1="165" x2="175" y2="205" stroke="#34495e" stroke-width="2"/>
+  <line x1="370" y1="165" x2="435" y2="205" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- Arrows from Intermediate to End Entities -->
+  <line x1="175" y1="270" x2="175" y2="310" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="435" y1="270" x2="435" y2="310" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- End Entities -->
+  <rect x="55" y="320" width="110" height="55" rx="8" fill="url(#entityGrad)" filter="url(#shadow)"/>
+  <text x="110" y="345" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">🌐 Website A</text>
+  <text x="110" y="362" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">www.example.com</text>
+  
+  <rect x="180" y="320" width="110" height="55" rx="8" fill="url(#entityGrad)" filter="url(#shadow)"/>
+  <text x="235" y="345" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">🌐 Website B</text>
+  <text x="235" y="362" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">www.bank.co.id</text>
+  
+  <rect x="320" y="320" width="110" height="55" rx="8" fill="url(#entityGrad)" filter="url(#shadow)"/>
+  <text x="375" y="345" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">📧 Email Server</text>
+  <text x="375" y="362" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">mail.company.com</text>
+  
+  <rect x="445" y="320" width="110" height="55" rx="8" fill="url(#entityGrad)" filter="url(#shadow)"/>
+  <text x="500" y="345" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">🔌 API Server</text>
+  <text x="500" y="362" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">api.service.io</text>
+  
+  <!-- Lines to end entities -->
+  <line x1="130" y1="270" x2="110" y2="320" stroke="#34495e" stroke-width="1"/>
+  <line x1="175" y1="270" x2="235" y2="320" stroke="#34495e" stroke-width="1"/>
+  <line x1="410" y1="270" x2="375" y2="320" stroke="#34495e" stroke-width="1"/>
+  <line x1="460" y1="270" x2="500" y2="320" stroke="#34495e" stroke-width="1"/>
+  
+  <!-- Browser Trust Store -->
+  <rect x="55" y="400" width="500" height="60" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="305" y="420" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e8449" text-anchor="middle">
+    🔒 Browser/OS Trust Store
+  </text>
+  <text x="305" y="440" font-family="Arial, sans-serif" font-size="9" fill="#2c3e50" text-anchor="middle">
+    Berisi daftar Root CA yang dipercaya (DigiCert, Let's Encrypt, Comodo, dll.)
+  </text>
+  <text x="305" y="453" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d" text-anchor="middle">
+    Browser memverifikasi rantai kepercayaan dari sertifikat website hingga Root CA
+  </text>
+  
+  <!-- PKI Components Section -->
+  <rect x="600" y="50" width="320" height="350" rx="15" fill="#e8f4fc" stroke="#3498db" stroke-width="2"/>
+  <text x="760" y="75" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2980b9" text-anchor="middle">
+    KOMPONEN PKI
+  </text>
+  
+  <!-- CA Component -->
+  <rect x="620" y="95" width="280" height="60" rx="8" fill="url(#rootCAGrad)" filter="url(#shadow)"/>
+  <text x="760" y="118" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+    Certificate Authority (CA)
+  </text>
+  <text x="760" y="138" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">
+    Menerbitkan dan mengelola sertifikat digital
+  </text>
+  
+  <!-- RA Component -->
+  <rect x="620" y="165" width="280" height="60" rx="8" fill="url(#raGrad)" filter="url(#shadow)"/>
+  <text x="760" y="188" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+    Registration Authority (RA)
+  </text>
+  <text x="760" y="208" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">
+    Memverifikasi identitas pemohon sertifikat
+  </text>
+  
+  <!-- Certificate Component -->
+  <rect x="620" y="235" width="280" height="70" rx="8" fill="url(#certGrad)" filter="url(#shadow)"/>
+  <text x="760" y="258" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">
+    📜 Sertifikat Digital (X.509)
+  </text>
+  <text x="760" y="275" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">
+    Berisi: Subject, Issuer, Public Key,
+  </text>
+  <text x="760" y="290" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">
+    Validity Period, Digital Signature
+  </text>
+  
+  <!-- CRL/OCSP Component -->
+  <rect x="620" y="315" width="135" height="70" rx="8" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="687" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">CRL</text>
+  <text x="687" y="358" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">Certificate</text>
+  <text x="687" y="370" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">Revocation List</text>
+  
+  <rect x="765" y="315" width="135" height="70" rx="8" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="832" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">OCSP</text>
+  <text x="832" y="358" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">Online Certificate</text>
+  <text x="832" y="370" font-family="Arial, sans-serif" font-size="8" fill="#ecf0f1" text-anchor="middle">Status Protocol</text>
+  
+  <!-- Certificate Verification Process -->
+  <rect x="30" y="480" width="890" height="160" rx="15" fill="#f5eef8" stroke="#9b59b6" stroke-width="2"/>
+  <text x="475" y="505" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8e44ad" text-anchor="middle">
+    PROSES VERIFIKASI SERTIFIKAT
+  </text>
+  
+  <!-- Step 1 -->
+  <rect x="50" y="520" width="170" height="60" rx="8" fill="#3498db" filter="url(#shadow)"/>
+  <text x="135" y="545" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">1. Browser Menerima</text>
+  <text x="135" y="565" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">Sertifikat dari Server</text>
+  
+  <!-- Arrow -->
+  <line x1="220" y1="550" x2="250" y2="550" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2 -->
+  <rect x="260" y="520" width="170" height="60" rx="8" fill="#9b59b6" filter="url(#shadow)"/>
+  <text x="345" y="545" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">2. Verifikasi Rantai</text>
+  <text x="345" y="565" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">hingga Root CA Terpercaya</text>
+  
+  <!-- Arrow -->
+  <line x1="430" y1="550" x2="460" y2="550" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3 -->
+  <rect x="470" y="520" width="170" height="60" rx="8" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="555" y="545" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">3. Cek Status</text>
+  <text x="555" y="565" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">CRL atau OCSP</text>
+  
+  <!-- Arrow -->
+  <line x1="640" y1="550" x2="670" y2="550" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4 -->
+  <rect x="680" y="520" width="170" height="60" rx="8" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="765" y="545" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">4. Koneksi Aman</text>
+  <text x="765" y="565" font-family="Arial, sans-serif" font-size="9" fill="#ecf0f1" text-anchor="middle">✓ Terverifikasi</text>
+  
+  <!-- Result icons -->
+  <text x="135" y="605" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">🔒 HTTPS</text>
+  <text x="345" y="605" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">📜 Chain Valid</text>
+  <text x="555" y="605" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">✓ Tidak Dicabut</text>
+  <text x="765" y="605" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">🛡️ Secure</text>
+</svg>
